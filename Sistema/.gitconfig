@@ -1,0 +1,9 @@
+[user]
+	name = Veras-D
+	email = dveras2310@gmail.com
+[core]
+	editor = code --await
+[init]
+	defaultBranch = main
+[credential]
+	helper = store

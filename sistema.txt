@@ -1,0 +1,3010 @@
+Flatpak 
+
+Nome                                 ID de aplicativo                         Versão                Ramo         Instalação
+Arduino IDE                          cc.arduino.arduinoide                    1.8.19                stable       user
+Dice Roller                          codes.nora.gDiceRoller                   1.1.3                 stable       user
+LibreSprite                          com.github.libresprite.LibreSprite       1.0                   stable       user
+Video Downloader                     com.github.unrud.VideoDownloader         0.12.10               stable       user
+VideoDownloader traduções            com.github.unrud.VideoDownloader.Locale                        stable       user
+Google Chrome                        com.google.Chrome                        120.0.6099.216-1      stable       user
+OBS Studio                           com.obsproject.Studio                    30.0.2                stable       user
+Studio traduções                     com.obsproject.Studio.Locale                                   stable       user
+Spotify                              com.spotify.Client                       1.2.26.1187.g36b715a1 stable       user
+Peek                                 com.uploadedlobster.peek                 1.5.1                 stable       user
+peek traduções                       com.uploadedlobster.peek.Locale                                stable       user
+Steam                                com.valvesoftware.Steam                  1.0.0.78              stable       user
+Visual Studio Code                   com.visualstudio.code                    1.85.1-1702462158     stable       user
+Roll-It                              dev.zelikos.rollit                       3.4.0                 stable       user
+Reaper                               fm.reaper.Reaper                         v7.08                 stable       user
+Colorway                             io.github.lainsce.Colorway               1.2.0                 stable       user
+Colorway traduções                   io.github.lainsce.Colorway.Locale                              stable       user
+Pomodoro traduções                   io.gitlab.idevecore.Pomodoro.Locale                            stable       user
+Gear Lever                           it.mijorus.gearlever                     1.2.0                 stable       user
+gearlever traduções                  it.mijorus.gearlever.Locale                                    stable       user
+Obsidian                             md.obsidian.Obsidian                     1.5.3                 stable       user
+Obsidian traduções                   md.obsidian.Obsidian.Locale                                    stable       user
+Anki                                 net.ankiweb.Anki                         23.12.1               stable       user
+Xmind (2023)                         net.xmind.XMind                          23.11.04336           stable       user
+FlightGear                           org.flightgear.FlightGear                2020.3.19             stable       user
+FreeCAD                              org.freecadweb.FreeCAD                   0.21.2.33771          stable       user
+FreeCAD traduções                    org.freecadweb.FreeCAD.Locale                                  stable       user
+Freedesktop Platform                 org.freedesktop.Platform                 21.08.22              21.08        user
+Freedesktop Platform                 org.freedesktop.Platform                 22.08.20              22.08        user
+Freedesktop Platform                 org.freedesktop.Platform                 23.08.10              23.08        user
+i386                                 org.freedesktop.Platform.Compat.i386                           22.08        user
+i386                                 org.freedesktop.Platform.Compat.i386                           23.08        user
+Mesa                                 org.freedesktop.Platform.GL.default      21.3.9                21.08        user
+Mesa                                 org.freedesktop.Platform.GL.default      23.3.0                22.08        user
+Mesa (Extra)                         org.freedesktop.Platform.GL.default      23.3.0                22.08-extra  user
+Mesa                                 org.freedesktop.Platform.GL.default      23.3.2                23.08        user
+Mesa (Extra)                         org.freedesktop.Platform.GL.default      23.3.2                23.08-extra  user
+nvidia-525-105-17                    …eedesktop.Platform.GL.nvidia-525-105-17                       1.4          user
+nvidia-525-116-04                    …eedesktop.Platform.GL.nvidia-525-116-04                       1.4          user
+nvidia-535-104-05                    …eedesktop.Platform.GL.nvidia-535-104-05                       1.4          user
+nvidia-535-113-01                    …eedesktop.Platform.GL.nvidia-535-113-01                       1.4          user
+nvidia-545-29-02                     …reedesktop.Platform.GL.nvidia-545-29-02                       1.4          user
+nvidia-545-29-06                     …reedesktop.Platform.GL.nvidia-545-29-06                       1.4          user
+Mesa                                 org.freedesktop.Platform.GL32.default    23.3.0                22.08        user
+Mesa (Extra)                         org.freedesktop.Platform.GL32.default    23.3.0                22.08-extra  user
+Mesa                                 org.freedesktop.Platform.GL32.default    23.3.2                23.08        user
+Mesa (Extra)                         org.freedesktop.Platform.GL32.default    23.3.2                23.08-extra  user
+nvidia-525-105-17                    …desktop.Platform.GL32.nvidia-525-105-17                       1.4          user
+nvidia-525-116-04                    …desktop.Platform.GL32.nvidia-525-116-04                       1.4          user
+nvidia-535-104-05                    …desktop.Platform.GL32.nvidia-535-104-05                       1.4          user
+nvidia-535-113-01                    …desktop.Platform.GL32.nvidia-535-113-01                       1.4          user
+nvidia-545-29-02                     …edesktop.Platform.GL32.nvidia-545-29-02                       1.4          user
+nvidia-545-29-06                     …edesktop.Platform.GL32.nvidia-545-29-06                       1.4          user
+freedesktop plataforma traduções     org.freedesktop.Platform.Locale                                21.08        user
+freedesktop plataforma traduções     org.freedesktop.Platform.Locale                                22.08        user
+freedesktop plataforma traduções     org.freedesktop.Platform.Locale                                23.08        user
+Intel                                org.freedesktop.Platform.VAAPI.Intel                           21.08        user
+Intel                                org.freedesktop.Platform.VAAPI.Intel                           22.08        user
+Intel                                org.freedesktop.Platform.VAAPI.Intel                           23.08        user
+i386                                 …g.freedesktop.Platform.VAAPI.Intel.i386                       22.08        user
+i386                                 …g.freedesktop.Platform.VAAPI.Intel.i386                       23.08        user
+ffmpeg-full                          org.freedesktop.Platform.ffmpeg-full                           22.08        user
+ffmpeg-full                          org.freedesktop.Platform.ffmpeg-full                           23.08        user
+i386                                 …g.freedesktop.Platform.ffmpeg_full.i386                       22.08        user
+i386                                 …g.freedesktop.Platform.ffmpeg_full.i386                       23.08        user
+openh264                             org.freedesktop.Platform.openh264        2.1.0                 2.0          user
+openh264                             org.freedesktop.Platform.openh264        2.1.0                 2.2.0        user
+Freedesktop SDK                      org.freedesktop.Sdk                      22.08.20              22.08        user
+Freedesktop SDK                      org.freedesktop.Sdk                      23.08.10              23.08        user
+freedesktop plataforma de desenvolv… org.freedesktop.Sdk.Locale                                     22.08        user
+freedesktop plataforma de desenvolv… org.freedesktop.Sdk.Locale                                     23.08        user
+Lollypop                             org.gnome.Lollypop                       1.4.37                stable       user
+Lollypop traduções                   org.gnome.Lollypop.Locale                                      stable       user
+GNOME Application Platform version … org.gnome.Platform                                             44           user
+GNOME Application Platform version … org.gnome.Platform                                             45           user
+i386                                 org.gnome.Platform.Compat.i386                                 44           user
+gnome plataforma traduções           org.gnome.Platform.Locale                                      44           user
+gnome plataforma traduções           org.gnome.Platform.Locale                                      45           user
+Citações                             org.gnome.World.Citations                0.6.2                 stable       user
+Citations traduções                  org.gnome.World.Citations.Locale                               stable       user
+Pop Gtk theme                        org.gtk.Gtk3theme.Pop-dark                                     3.22         user
+KDE Application Platform             org.kde.Platform                                               5.15-22.08   user
+KDE Application Platform             org.kde.Platform                                               5.15-23.08   user
+KDE Application Platform             org.kde.Platform                                               6.5          user
+KDE Application Platform             org.kde.Platform                                               6.6          user
+kde plataforma traduções             org.kde.Platform.Locale                                        5.15-22.08   user
+kde plataforma traduções             org.kde.Platform.Locale                                        5.15-23.08   user
+kde plataforma traduções             org.kde.Platform.Locale                                        6.5          user
+kde plataforma traduções             org.kde.Platform.Locale                                        6.6          user
+QGnomePlatform                       org.kde.PlatformTheme.QGnomePlatform                           5.15-21.08   user
+QGnomePlatform                       org.kde.PlatformTheme.QGnomePlatform                           5.15-22.08   user
+QGnomePlatform                       org.kde.PlatformTheme.QGnomePlatform                           5.15-23.08   user
+QGnomePlatform                       org.kde.PlatformTheme.QGnomePlatform                           6.5          user
+QGnomePlatform                       org.kde.PlatformTheme.QGnomePlatform                           6.6          user
+QtSNI                                org.kde.PlatformTheme.QtSNI                                    5.15-21.08   user
+QAdwaitaDecorations                  …e.WaylandDecoration.QAdwaitaDecorations                       5.15-22.08   user
+QAdwaitaDecorations                  …e.WaylandDecoration.QAdwaitaDecorations                       5.15-23.08   user
+QAdwaitaDecorations                  …e.WaylandDecoration.QAdwaitaDecorations                       6.5          user
+QGnomePlatform-decoration            …andDecoration.QGnomePlatform-decoration                       5.15-21.08   user
+QGnomePlatform-decoration            …andDecoration.QGnomePlatform-decoration                       5.15-22.08   user
+QGnomePlatform-decoration            …andDecoration.QGnomePlatform-decoration                       5.15-23.08   user
+QGnomePlatform-decoration            …andDecoration.QGnomePlatform-decoration                       6.5          user
+LocalSend                            org.localsend.localsend_app              1.13.1                stable       user
+ONLYOFFICE Desktop Editors           org.onlyoffice.desktopeditors            7.5.1                 stable       user
+webview traduções                    org.telegram.desktop.webview.Locale                            stable       user
+TeXstudio                            org.texstudio.TeXstudio                  4.7.2                 stable       user
+DXVK                                 org.winehq.Wine.DLLs.dxvk                2.3                   stable-22.08 user
+DXVK                                 org.winehq.Wine.DLLs.dxvk                2.3                   stable-23.08 user
+Gecko                                org.winehq.Wine.gecko                                          stable-22.08 user
+Gecko                                org.winehq.Wine.gecko                                          stable-23.08 user
+Mono                                 org.winehq.Wine.mono                                           stable-22.08 user
+Mono                                 org.winehq.Wine.mono                                           stable-23.08 user
+Main Menu                            …eberg.libre_menu_editor.LibreMenuEditor 1.3                   stable       user
+
+Snap
+
+Name               Version                     Rev    Tracking       Publisher        Notes
+bare               1.0                         5      latest/stable  canonical✓       base
+chromium           120.0.6099.71               2713   latest/stable  canonical✓       -
+core               16-2.60.4                   16202  latest/stable  canonical✓       core
+core18             20231027                    2812   latest/stable  canonical✓       base
+core20             20231123                    2105   latest/stable  canonical✓       base
+core22             20231123                    1033   latest/stable  canonical✓       base
+cups               2.4.7-3                     1024   latest/stable  openprinting✓    -
+dijo               0.2.7                       4      latest/stable  badpurvesh11     -
+flutter            0+git.fb97815               141    latest/stable  flutter-team✓    classic
+gnome-3-28-1804    3.28.0-19-g98f9e67.98f9e67  198    latest/stable  canonical✓       -
+gnome-42-2204      0+git.ff35a85               141    latest/stable  canonical✓       -
+gtk-common-themes  0.1-81-g442e511             1535   latest/stable  canonical✓       -
+kotlin             1.9.21                      74     latest/stable  jetbrains✓       classic
+pycharm-community  2023.3.2                    360    latest/stable  jetbrains✓       classic
+snapd              2.61.1                      20671  latest/stable  canonical✓       snapd
+weektodo           2.1.0                       30     latest/stable  merodriguez9112  -
+
+pip
+
+aiohttp==3.8.4
+aiosignal==1.3.1
+altgraph==0.17.4
+appdirs==1.4.4
+argcomplete==3.1.1
+asttokens==2.4.1
+async-timeout==4.0.2
+attrs==21.2.0
+backcall==0.2.0
+bcc==0.18.0
+beautifulsoup4==4.10.0
+beniget==0.4.1
+blinker==1.4
+Brlapi==0.8.3
+Brotli==1.0.9
+bs4==0.0.1
+build==1.0.3
+cachetools==5.3.1
+cefpython3==66.0
+certifi==2023.7.22
+chardet==4.0.0
+charset-normalizer==2.0.12
+chrome-gnome-shell==0.0.0
+click==8.0.3
+colorama==0.4.4
+comm==0.2.0
+command-not-found==0.3
+commonmark==0.9.1
+construct==2.10.70
+contourpy==1.1.0
+cryptography==3.4.8
+cupshelpers==1.0
+customtkinter==5.2.1
+cvxpy==1.3.2
+cycler==0.11.0
+darkdetect==0.8.0
+dbus-python==1.2.18
+debugpy==1.8.0
+decorator==5.1.1
+defer==1.0.6
+deprecation==2.1.0
+dill==0.3.7
+discovery==0.0.4
+distro==1.7.0
+docutils==0.20.1
+ecos==2.0.12
+entrypoints==0.4
+exceptiongroup==1.1.3
+executing==2.0.1
+filelock==3.6.0
+flightgear-python==1.4.1
+fonttools==4.40.0
+frozenlist==1.3.3
+fs==2.4.12
+fsspec==2023.12.2
+gast==0.5.2
+google-api-core==2.11.1
+google-api-python-client==2.98.0
+google-auth==2.22.0
+google-auth-httplib2==0.1.0
+googleapis-common-protos==1.60.0
+gyp==0.1
+hidpidaemon==18.4.6
+html5lib==1.1
+httplib2==0.22.0
+idna==3.4
+importlib-metadata==4.6.4
+install==1.3.5
+ipykernel==6.26.0
+ipython==8.17.2
+ipython_genutils==0.2.0
+jedi==0.19.1
+jeepney==0.7.1
+Jinja2==3.1.2
+jupyter_client==8.6.0
+jupyter_core==5.5.0
+kernelstub==3.1.4
+keyring==23.5.0
+Kivy==2.2.1
+Kivy-Garden==0.1.5
+kiwisolver==1.4.4
+language-selector==0.1
+launchpadlib==1.10.16
+lazr.restfulclient==0.14.4
+lazr.uri==1.0.6
+louis==3.20.0
+lxml==4.8.0
+lz4==3.1.3+dfsg
+macaroonbakery==1.3.1
+mapping==0.1.6
+MarkupSafe==2.1.3
+matplotlib==3.7.1
+matplotlib-inline==0.1.6
+mock==4.0.3
+more-itertools==8.10.0
+mpmath==0.0.0
+multidict==6.0.4
+multiprocess==0.70.12.2
+mutagen==1.45.1
+nest-asyncio==1.5.8
+netaddr==0.8.0
+netifaces==0.11.0
+networkx==3.2.1
+nidaqmx==0.8.0
+numpy==1.25.0
+nvidia-cublas-cu12==12.1.3.1
+nvidia-cuda-cupti-cu12==12.1.105
+nvidia-cuda-nvrtc-cu12==12.1.105
+nvidia-cuda-runtime-cu12==12.1.105
+nvidia-cudnn-cu12==8.9.2.26
+nvidia-cufft-cu12==11.0.2.54
+nvidia-curand-cu12==10.3.2.106
+nvidia-cusolver-cu12==11.4.5.107
+nvidia-cusparse-cu12==12.1.0.106
+nvidia-nccl-cu12==2.18.1
+nvidia-nvjitlink-cu12==12.3.101
+nvidia-nvtx-cu12==12.1.105
+oauthlib==3.2.0
+olefile==0.46
+openai==0.27.8
+osqp==0.6.3
+packaging==23.1
+pandas==2.0.2
+parso==0.8.3
+pbr==5.8.0
+pdfminer3==2018.12.3.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==10.0.1
+pipx==1.2.0
+platformdirs==4.0.0
+ply==3.11
+pop-transition==1.1.2
+powerline-status==2.8.2
+prompt-toolkit==3.0.41
+protobuf==4.24.3
+psutil==5.9.6
+ptyprocess==0.7.0
+pure-eval==0.2.2
+py==1.10.0
+pyasn1==0.5.0
+pyasn1-modules==0.3.0
+pycairo==1.20.1
+pycryptodome==3.19.0
+pycryptodomex==3.11.0
+pycups==2.0.1
+pydbus==0.6.0
+pyFirmata==1.1.0
+pygame==2.5.2
+Pygments==2.11.2
+PyGObject==3.42.1
+pyinstaller==6.3.0
+pyinstaller-hooks-contrib==2023.11
+PyJWT==2.3.0
+pymacaroons==0.13.0
+PyMuPDF==1.23.0
+PyMuPDFb==1.23.0
+PyNaCl==1.5.0
+pyparsing==3.1.0
+pyperclip==1.8.2
+pyproject_hooks==1.0.0
+PyQt5==5.15.6
+PyQt5-sip==12.9.1
+PyQtWebEngine==5.15.5
+pyRFC3339==1.1
+pyserial==3.5
+PySimpleGUI==4.60.5
+python-apt==2.4.0+ubuntu2
+python-dateutil==2.8.2
+python-debian==0.1.43+ubuntu1.1
+python-gnupg==0.4.8
+python-pptx==0.6.23
+python-xlib==0.29
+pythran==0.10.0
+pytz==2023.3
+pyxattr==0.7.2
+pyxdg==0.27
+PyYAML==5.4.1
+pyzmq==25.1.1
+qdldl==0.1.7.post0
+qtconsole==5.2.2
+QtPy==2.0.0
+repolib==2.2.1
+repoman==1.4.0
+requests==2.5.0
+requests-file==1.5.1
+rich==12.6.0
+rsa==4.9
+scipy==1.8.0
+screen-resolution-extra==0.0.0
+scs==3.2.3
+SecretStorage==3.3.1
+sessioninstaller==0.0.0
+shell-genie==0.2.10
+shellingham==1.5.0.post1
+six==1.16.0
+sortedcontainers==2.4.0
+soupsieve==2.3.1
+stack-data==0.6.3
+stdeb==0.10.0
+sympy==1.9
+systemd-python==234
+tldextract==3.1.2
+tomli==2.0.1
+tornado==6.3.3
+tqdm==4.65.0
+traitlets==5.13.0
+triton==2.1.0
+typer==0.7.0
+typing_extensions==4.9.0
+tzdata==2023.3
+ubuntu-advantage-tools==8001
+ubuntu-drivers-common==0.0.0
+ufoLib2==0.13.1
+ufw==0.36.1
+unicodedata2==14.0.0
+uritemplate==4.1.1
+urllib3==1.26.16
+urwid==2.1.2
+userpath==1.8.0
+wadllib==1.3.6
+wcwidth==0.2.10
+webencodings==0.5.1
+websockets==9.1
+xdg==5
+xkit==0.0.0
+XlsxWriter==3.1.9
+yarl==1.9.2
+youtube-dl==2021.12.17
+youtube-dlc==2020.11.11.post3
+yt-dlp==2022.4.8
+zipp==1.0.0
+
+.deb
+
+accountsservice					install
+acl						install
+acpi-support					install
+acpid						install
+adduser						install
+adwaita-icon-theme				install
+adwaita-icon-theme-full				install
+aglfn						install
+alacarte					install
+alsa-base					install
+alsa-topology-conf				install
+alsa-ucm-conf					install
+alsa-utils					install
+amd-ppt-bin					install
+amd64-microcode					install
+android-studio-2022.3.1				install
+apg						install
+app-install-data				install
+apparmor					install
+apport						install
+apport-symptoms					install
+appstream					install
+appstream-data-pop				install
+appstream-data-pop-icons			install
+apt						install
+apt-config-icons				install
+apt-config-icons-hidpi				install
+apt-config-icons-large				install
+apt-config-icons-large-hidpi			install
+apt-file					install
+apt-transport-https				install
+apt-utils					install
+aptdaemon					install
+aptdaemon-data					install
+aspell						install
+aspell-en					install
+at-spi2-core					install
+atop						install
+autoconf					install
+automake					install
+autopoint					install
+autotools-dev					install
+avahi-autoipd					install
+avahi-daemon					install
+avahi-utils					install
+avr-libc					install
+avrdude						install
+backintime-common				install
+backintime-qt					install
+bamfdaemon					install
+baobab						install
+base-files					install
+base-passwd					install
+bash						install
+bash-completion					install
+bashtop						install
+bc						install
+bind9-dnsutils					install
+bind9-host					install
+bind9-libs:amd64				install
+binfmt-support					install
+binutils					install
+binutils-avr					install
+binutils-common:amd64				install
+binutils-x86-64-linux-gnu			install
+blender						install
+blender-data					install
+blt						install
+bluez						install
+bluez-cups					install
+bluez-obexd					install
+bmon						install
+bolt						install
+bpfcc-tools					install
+brasero-common					install
+bsdextrautils					install
+bsdutils					install
+bubblewrap					install
+build-essential					install
+busybox-initramfs				install
+busybox-static					install
+byobu						install
+byzanz						install
+bzip2						install
+bzip2-doc					install
+ca-certificates					install
+ca-certificates-java				install
+ca-certificates-mono				install
+cabextract					install
+caca-utils					install
+ccze						install
+cdrdao						install
+chafa						install
+cheese-common					install
+chktex						install
+chrome-gnome-shell				install
+chromium-browser				install
+chromium-codecs-ffmpeg-extra			install
+chrony						install
+cli-common					install
+cm-super					install
+cm-super-minimal				install
+cmatrix						install
+colord						install
+colord-data					install
+com.github.donadigo.eddy			install
+command-not-found				install
+console-setup					install
+console-setup-linux				install
+containerd.io					install
+copyq						install
+copyq-plugins					install
+coreutils					install
+cpio						install
+cpp						install
+cpp-11						install
+cpp-12						install
+cracklib-runtime				install
+cron						install
+cryptsetup					install
+cryptsetup-bin					install
+cryptsetup-initramfs				install
+cups						install
+cups-browsed					install
+cups-bsd					install
+cups-client					install
+cups-common					install
+cups-core-drivers				install
+cups-daemon					install
+cups-filters					install
+cups-filters-core-drivers			install
+cups-ipp-utils					install
+cups-pk-helper					install
+cups-ppdc					install
+cups-server-common				install
+curl						install
+dash						install
+dbus						install
+dbus-broker					install
+dbus-user-session				install
+dc						install
+dconf-cli					install
+dconf-gsettings-backend:amd64			install
+dconf-service					install
+dctrl-tools					install
+dde-qt5integration:amd64			install
+debconf						install
+debconf-i18n					install
+debhelper					install
+debianutils					install
+debugedit					install
+deepin-screen-recorder				install
+default-jdk					install
+default-jdk-headless				install
+default-jre					install
+default-jre-headless				install
+desktop-file-utils				install
+devilspie2					install
+dh-autoreconf					install
+dh-make						install
+dh-strip-nondeterminism				install
+dictionaries-common				install
+diffstat					install
+diffutils					install
+dirmngr						install
+distro-info					install
+distro-info-data				install
+dkms						install
+dleyna-server					install
+dmeventd					install
+dmidecode					install
+dmsetup						install
+dns-root-data					install
+dnsmasq-base					install
+docbook-xml					install
+docker-buildx-plugin				install
+docker-ce					install
+docker-ce-cli					install
+docker-ce-rootless-extras			install
+docker-compose-plugin				install
+dosfstools					install
+dpkg						install
+dpkg-dev					install
+dvidvi						install
+dvipng						install
+dvisvgm						install
+dwz						install
+e2fsprogs					install
+ecryptfs-utils					install
+ed						install
+efibootmgr					install
+eject						install
+emacsen-common					install
+enchant-2					install
+eog						install
+espeak-ng-data:amd64				install
+ethtool						install
+evince						install
+evince-common					install
+evolution-data-server				install
+evolution-data-server-common			install
+fakeroot					install
+fd-find						install
+fdisk						install
+feynmf						install
+ffmpeg						install
+ffmpegthumbnailer				install
+file						install
+file-roller					install
+finalrd						install
+findutils					install
+firmware-manager-notify				install
+firmware-manager-shared				install
+firmware-sof-signed				install
+flatpak						install
+foomatic-db-compressed-ppds			install
+fragmaster					install
+friendly-recovery				install
+ftp						install
+fuse3						install
+fuseiso						install
+fwupd						install
+fwupd-signed					install
+fwupd-unsigned					install
+g++						install
+g++-11						install
+gamin						install
+gawk						install
+gcc						install
+gcc-11						install
+gcc-11-base:amd64				install
+gcc-12						install
+gcc-12-base:amd64				install
+gcc-12-base:i386				install
+gcc-avr						install
+gcr						install
+gdal-data					install
+gdebi						install
+gdebi-core					install
+gdisk						install
+gdm3						install
+gedit						install
+gedit-common					install
+geoclue-2.0					install
+gettext						install
+gettext-base					install
+gfortran					install
+gfortran-11					install
+ghostscript					install
+ghostscript-x					install
+gir1.2-accountsservice-1.0:amd64		install
+gir1.2-adw-1:amd64				install
+gir1.2-atk-1.0:amd64				install
+gir1.2-atspi-2.0:amd64				install
+gir1.2-clutter-1.0:amd64			install
+gir1.2-cogl-1.0:amd64				install
+gir1.2-coglpango-1.0:amd64			install
+gir1.2-evince-3.0:amd64				install
+gir1.2-flatpak-1.0:amd64			install
+gir1.2-freedesktop:amd64			install
+gir1.2-gck-1:amd64				install
+gir1.2-gcr-3:amd64				install
+gir1.2-gdesktopenums-3.0:amd64			install
+gir1.2-gdkpixbuf-2.0:amd64			install
+gir1.2-gdm-1.0:amd64				install
+gir1.2-geoclue-2.0:amd64			install
+gir1.2-gexiv2-0.10:amd64			install
+gir1.2-glib-2.0:amd64				install
+gir1.2-gmenu-3.0:amd64				install
+gir1.2-gnomebluetooth-3.0:amd64			install
+gir1.2-gnomedesktop-3.0:amd64			install
+gir1.2-graphene-1.0:amd64			install
+gir1.2-gst-plugins-base-1.0:amd64		install
+gir1.2-gstreamer-1.0:amd64			install
+gir1.2-gtk-3.0:amd64				install
+gir1.2-gtk-4.0:amd64				install
+gir1.2-gtksource-4:amd64			install
+gir1.2-gweather-3.0:amd64			install
+gir1.2-handy-1:amd64				install
+gir1.2-harfbuzz-0.0:amd64			install
+gir1.2-ibus-1.0:amd64				install
+gir1.2-javascriptcoregtk-4.0:amd64		install
+gir1.2-json-1.0:amd64				install
+gir1.2-mutter-10:amd64				install
+gir1.2-nm-1.0:amd64				install
+gir1.2-nma-1.0:amd64				install
+gir1.2-notify-0.7:amd64				install
+gir1.2-ostree-1.0:amd64				install
+gir1.2-packagekitglib-1.0			install
+gir1.2-pango-1.0:amd64				install
+gir1.2-peas-1.0:amd64				install
+gir1.2-polkit-1.0				install
+gir1.2-rsvg-2.0:amd64				install
+gir1.2-secret-1:amd64				install
+gir1.2-soup-2.4:amd64				install
+gir1.2-totem-1.0:amd64				install
+gir1.2-totemplparser-1.0:amd64			install
+gir1.2-upowerglib-1.0:amd64			install
+gir1.2-vte-2.91:amd64				install
+gir1.2-webkit2-4.0:amd64			install
+gir1.2-wnck-3.0:amd64				install
+gist						install
+git						install
+git-lfs						install
+git-man						install
+gjs						install
+gkbd-capplet					install
+glib-networking:amd64				install
+glib-networking:i386				install
+glib-networking-common				install
+glib-networking-services			install
+gm-assistant					install
+gnome-accessibility-themes			install
+gnome-bluetooth					install
+gnome-bluetooth-3-common			install
+gnome-bluetooth-common				install
+gnome-calculator				install
+gnome-calendar					install
+gnome-contacts					install
+gnome-control-center				install
+gnome-control-center-data			install
+gnome-control-center-faces			install
+gnome-desktop3-data				install
+gnome-disk-utility				install
+gnome-font-viewer				install
+gnome-icon-theme				install
+gnome-keyring					install
+gnome-keyring-pkcs11:amd64			install
+gnome-menus					install
+gnome-online-accounts				install
+gnome-online-miners				install
+gnome-orca					install
+gnome-power-manager				install
+gnome-remote-desktop				install
+gnome-session-bin				install
+gnome-session-common				install
+gnome-settings-daemon				install
+gnome-settings-daemon-common			install
+gnome-shell					install
+gnome-shell-common				install
+gnome-shell-extension-appindicator		install
+gnome-shell-extension-cosmic-dock		install
+gnome-shell-extension-cosmic-workspaces		install
+gnome-shell-extension-desktop-icons-ng		install
+gnome-shell-extension-pop-x11gestures		install
+gnome-shell-extension-prefs			install
+gnome-shell-extension-system76-power		install
+gnome-shell-pomodoro				install
+gnome-shell-pomodoro-data			install
+gnome-startup-applications			install
+gnome-sushi					install
+gnome-system-monitor				install
+gnome-terminal					install
+gnome-terminal-data				install
+gnome-themes-extra:amd64			install
+gnome-themes-extra-data				install
+gnome-themes-standard				install
+gnome-tweaks					install
+gnome-user-docs					install
+gnome-user-docs-pt				install
+gnome-video-effects				install
+gnome-weather					install
+gnupg						install
+gnupg-l10n					install
+gnupg-utils					install
+gnuplot-data					install
+gnuplot-qt					install
+gparted						install
+gparted-common					install
+gpg						install
+gpg-agent					install
+gpg-wks-client					install
+gpg-wks-server					install
+gpgconf						install
+gpgsm						install
+gpgv						install
+grep						install
+grilo-plugins-0.3				install
+grilo-plugins-0.3-base:amd64			install
+grilo-plugins-0.3-extra:amd64			install
+groff-base					install
+gsettings-desktop-schemas			install
+gsfonts						install
+gstreamer1.0-alsa:amd64				install
+gstreamer1.0-clutter-3.0:amd64			install
+gstreamer1.0-gl:amd64				install
+gstreamer1.0-gtk3:amd64				install
+gstreamer1.0-libav:amd64			install
+gstreamer1.0-pipewire:amd64			install
+gstreamer1.0-plugins-base:amd64			install
+gstreamer1.0-plugins-base:i386			install
+gstreamer1.0-plugins-base-apps			install
+gstreamer1.0-plugins-good:amd64			install
+gstreamer1.0-plugins-good:i386			install
+gstreamer1.0-plugins-ugly:amd64			install
+gstreamer1.0-pulseaudio:amd64			install
+gstreamer1.0-tools				install
+gstreamer1.0-vaapi:amd64			install
+gstreamer1.0-x:amd64				install
+gstreamer1.0-x:i386				install
+gthumb						install
+gthumb-data					install
+gtk-update-icon-cache				install
+gtk2-engines-murrine:amd64			install
+gtk2-engines-pixbuf:amd64			install
+gucharmap					install
+gvfs:amd64					install
+gvfs-backends					install
+gvfs-common					install
+gvfs-daemons					install
+gvfs-fuse					install
+gvfs-libs:amd64					install
+gyp						install
+gzip						install
+hdparm						install
+hicolor-icon-theme				install
+hidpi-daemon					install
+hollywood					install
+hostname					install
+htop						install
+i965-va-driver:amd64				install
+ibus						install
+ibus-chewing					install
+ibus-data					install
+ibus-gtk:amd64					install
+ibus-gtk3:amd64					install
+ibus-gtk4:amd64					install
+ibus-libpinyin					install
+ibus-table					install
+ibus-table-cangjie3				install
+ibus-table-cangjie5				install
+ibus-table-emoji				install
+ibus-table-quick-classic			install
+ibus-table-wubi					install
+ibverbs-providers:amd64				install
+icu-devtools					install
+ieee-data					install
+ifupdown					install
+iio-sensor-proxy				install
+im-config					install
+imagemagick-6-common				install
+info						install
+init						install
+init-system-helpers				install
+initramfs-tools					install
+initramfs-tools-bin				install
+initramfs-tools-core				install
+inputattach					install
+install-info					install
+intel-media-va-driver:amd64			install
+intel-microcode					install
+intltool-debian					install
+inxi						install
+ipp-usb						install
+iproute2					install
+iptables					install
+iputils-ping					install
+iputils-tracepath				install
+isc-dhcp-client					install
+isc-dhcp-common					install
+iso-codes					install
+iucode-tool					install
+iw						install
+java-common					install
+javascript-common				install
+jp2a						install
+jq						install
+julia						install
+jupyter-core					install
+jupyter-qtconsole				install
+kactivities-bin					install
+kactivitymanagerd				install
+kbd						install
+kded5						install
+keditbookmarks					install
+kernelstub					install
+keyboard-configuration				install
+keyutils					install
+kio						install
+kio-extras					install
+kio-extras-data					install
+klibc-utils					install
+kmod						install
+krb5-locales					install
+kwayland-data					install
+kwayland-integration:amd64			install
+kylin-video					install
+lacheck						install
+laptop-detect					install
+latexdiff					install
+latexmk						install
+lcdf-typetools					install
+less						install
+lib32gcc-s1					install
+lib32stdc++6					install
+liba52-0.7.4:amd64				install
+libaa1:amd64					install
+libaa1:i386					install
+libaacs0:amd64					install
+libabsl20210324:amd64				install
+libaccountsservice0:amd64			install
+libacl1:amd64					install
+libadwaita-1-0:amd64				install
+libaec0:amd64					install
+libaio1:amd64					install
+libalgorithm-c3-perl				install
+libalgorithm-diff-perl				install
+libalgorithm-diff-xs-perl			install
+libalgorithm-merge-perl				install
+libaliased-perl					install
+libao-common					install
+libao4:amd64					install
+libaom3:amd64					install
+libapache-pom-java				install
+libapparmor1:amd64				install
+libapparmor1:i386				install
+libappimage0:amd64				install
+libappstream4:amd64				install
+libapt-pkg-perl					install
+libapt-pkg6.0:amd64				install
+libarchive-cpio-perl				install
+libarchive-zip-perl				install
+libarchive13:amd64				install
+libargon2-1:amd64				install
+libaribb24-0:amd64				install
+libarmadillo10					install
+libarpack2:amd64				install
+libasan6:amd64					install
+libasan8:amd64					install
+libasound2:amd64				install
+libasound2:i386					install
+libasound2-data					install
+libasound2-plugins:amd64			install
+libasound2-plugins:i386				install
+libaspell15:amd64				install
+libass9:amd64					install
+libassuan0:amd64				install
+libasyncns0:amd64				install
+libasyncns0:i386				install
+libatasmart4:amd64				install
+libatk-adaptor:amd64				install
+libatk-bridge2.0-0:amd64			install
+libatk-wrapper-java				install
+libatk-wrapper-java-jni:amd64			install
+libatk1.0-0:amd64				install
+libatk1.0-0:i386				install
+libatk1.0-data					install
+libatkmm-1.6-1v5:amd64				install
+libatm1:amd64					install
+libatomic1:amd64				install
+libatomic1:i386					install
+libatopology2:amd64				install
+libatspi2.0-0:amd64				install
+libattr1:amd64					install
+libaudio2:amd64					install
+libaudit-common					install
+libaudit1:amd64					install
+libauthen-sasl-perl				install
+libavahi-client3:amd64				install
+libavahi-client3:i386				install
+libavahi-common-data:amd64			install
+libavahi-common-data:i386			install
+libavahi-common3:amd64				install
+libavahi-common3:i386				install
+libavahi-core7:amd64				install
+libavahi-glib1:amd64				install
+libavc1394-0:amd64				install
+libavc1394-0:i386				install
+libavcodec-extra:amd64				install
+libavcodec-extra58:amd64			install
+libavdevice58:amd64				install
+libavfilter7:amd64				install
+libavformat58:amd64				install
+libavutil56:amd64				install
+libayatana-appindicator3-1			install
+libayatana-ido3-0.4-0:amd64			install
+libayatana-indicator3-7:amd64			install
+libb-hooks-endofscope-perl			install
+libb-hooks-op-check-perl			install
+libbamf3-2:amd64				install
+libbdplus0:amd64				install
+libbinutils:amd64				install
+libblas-dev:amd64				install
+libblas3:amd64					install
+libblkid-dev:amd64				install
+libblkid1:amd64					install
+libblkid1:i386					install
+libblockdev-crypto2:amd64			install
+libblockdev-fs2:amd64				install
+libblockdev-loop2:amd64				install
+libblockdev-mdraid2:amd64			install
+libblockdev-part-err2:amd64			install
+libblockdev-part2:amd64				install
+libblockdev-swap2:amd64				install
+libblockdev-utils2:amd64			install
+libblockdev2:amd64				install
+libblosc1:amd64					install
+libbluetooth3:amd64				install
+libbluray2:amd64				install
+libboost-atomic1.74-dev:amd64			install
+libboost-atomic1.74.0:amd64			install
+libboost-chrono1.74-dev:amd64			install
+libboost-chrono1.74.0:amd64			install
+libboost-date-time1.74-dev:amd64		install
+libboost-date-time1.74.0:amd64			install
+libboost-dev:amd64				install
+libboost-filesystem1.74.0:amd64			install
+libboost-iostreams1.74.0:amd64			install
+libboost-locale1.74.0:amd64			install
+libboost-program-options-dev:amd64		install
+libboost-program-options1.74-dev:amd64		install
+libboost-program-options1.74.0:amd64		install
+libboost-serialization1.74-dev:amd64		install
+libboost-serialization1.74.0:amd64		install
+libboost-system-dev:amd64			install
+libboost-system1.74-dev:amd64			install
+libboost-system1.74.0:amd64			install
+libboost-thread-dev:amd64			install
+libboost-thread1.74-dev:amd64			install
+libboost-thread1.74.0:amd64			install
+libboost1.74-dev:amd64				install
+libbpf0:amd64					install
+libbpfcc					install
+libbrasero-media3-1:amd64			install
+libbrlapi0.8:amd64				install
+libbrotli1:amd64				install
+libbrotli1:i386					install
+libbs2b0:amd64					install
+libbsd0:amd64					install
+libbsd0:i386					install
+libburn4:amd64					install
+libbusiness-isbn-data-perl			install
+libbusiness-isbn-perl				install
+libbytesize-common				install
+libbytesize1:amd64				install
+libbz2-1.0:amd64				install
+libbz2-1.0:i386					install
+libbz2-dev:amd64				install
+libc-ares2:amd64				install
+libc-bin					install
+libc-dev-bin					install
+libc-devtools					install
+libc6:amd64					install
+libc6:i386					install
+libc6-dev:amd64					install
+libc6-i386					install
+libcaca0:amd64					install
+libcaca0:i386					install
+libcaf-openmpi-3:amd64				install
+libcairo-gobject-perl:amd64			install
+libcairo-gobject2:amd64				install
+libcairo-gobject2:i386				install
+libcairo-perl:amd64				install
+libcairo-script-interpreter2:amd64		install
+libcairo2:amd64					install
+libcairo2:i386					install
+libcairomm-1.0-1v5:amd64			install
+libcamel-1.2-63:amd64				install
+libcanberra-gtk-module:amd64			install
+libcanberra-gtk-module:i386			install
+libcanberra-gtk0:amd64				install
+libcanberra-gtk0:i386				install
+libcanberra-gtk3-0:amd64			install
+libcanberra-gtk3-module:amd64			install
+libcanberra-pulse:amd64				install
+libcanberra0:amd64				install
+libcanberra0:i386				install
+libcap-ng0:amd64				install
+libcap2:amd64					install
+libcap2:i386					install
+libcap2-bin					install
+libcapi20-3:amd64				install
+libcapi20-3:i386				install
+libcapture-tiny-perl				install
+libcbor0.8:amd64				install
+libcc1-0:amd64					install
+libcddb2					install
+libcdio-cdda2:amd64				install
+libcdio-paranoia2:amd64				install
+libcdio19:amd64					install
+libcdparanoia0:amd64				install
+libcdparanoia0:i386				install
+libcfitsio9:amd64				install
+libcgal-dev:amd64				install
+libchafa0:amd64					install
+libcharls2:amd64				install
+libcheese-gtk25:amd64				install
+libcheese8:amd64				install
+libchewing3:amd64				install
+libchewing3-data				install
+libchromaprint1:amd64				install
+libclang-14-dev					install
+libclang-common-14-dev				install
+libclang-cpp11					install
+libclang-dev					install
+libclang1-14					install
+libclass-c3-perl				install
+libclass-c3-xs-perl				install
+libclass-data-inheritable-perl			install
+libclass-method-modifiers-perl			install
+libclass-xsaccessor-perl			install
+libclone-perl					install
+libclucene-contribs1v5:amd64			install
+libclucene-core1v5:amd64			install
+libclutter-1.0-0:amd64				install
+libclutter-1.0-common				install
+libclutter-gst-3.0-0:amd64			install
+libclutter-gtk-1.0-0:amd64			install
+libcminpack1:amd64				install
+libcoarrays-dev:amd64				install
+libcoarrays-openmpi-dev:amd64			install
+libcodec2-1.0:amd64				install
+libcogl-common					install
+libcogl-pango20:amd64				install
+libcogl-path20:amd64				install
+libcogl20:amd64					install
+libcolord-gtk1:amd64				install
+libcolord2:amd64				install
+libcolorhug2:amd64				install
+libcom-err2:amd64				install
+libcom-err2:i386				install
+libcommon-sense-perl:amd64			install
+libcommons-logging-java				install
+libcommons-parent-java				install
+libconfig++9v5:amd64				install
+libconfig-tiny-perl				install
+libconfuse-common				install
+libconfuse2:amd64				install
+libconst-fast-perl				install
+libcpanel-json-xs-perl:amd64			install
+libcrack2:amd64					install
+libcrypt-dev:amd64				install
+libcrypt1:amd64					install
+libcrypt1:i386					install
+libcryptsetup12:amd64				install
+libctf-nobfd0:amd64				install
+libctf0:amd64					install
+libcue2:amd64					install
+libcups2:amd64					install
+libcups2:i386					install
+libcupsfilters1:amd64				install
+libcupsimage2:amd64				install
+libcurl3-gnutls:amd64				install
+libcurl4:amd64					install
+libcurl4:i386					install
+libdaemon0:amd64				install
+libdata-dpath-perl				install
+libdata-dump-perl				install
+libdata-messagepack-perl			install
+libdata-optlist-perl				install
+libdata-validate-domain-perl			install
+libdata-validate-ip-perl			install
+libdata-validate-uri-perl			install
+libdatrie1:amd64				install
+libdatrie1:i386					install
+libdav1d5:amd64					install
+libdazzle-1.0-0:amd64				install
+libdazzle-common				install
+libdb5.3:amd64					install
+libdb5.3:i386					install
+libdbi1:amd64					install
+libdbus-1-3:amd64				install
+libdbus-1-3:i386				install
+libdbus-glib-1-2:amd64				install
+libdbusmenu-glib4:amd64				install
+libdbusmenu-gtk3-4:amd64			install
+libdbusmenu-qt5-2:amd64				install
+libdc1394-25:amd64				install
+libdca0:amd64					install
+libdcmtk16					install
+libdconf1:amd64					install
+libde265-0:amd64				install
+libdebconfclient0:amd64				install
+libdebhelper-perl				install
+libdecor-0-0:amd64				install
+libdecor-0-0:i386				install
+libdecor-0-plugin-1-cairo:amd64			install
+libdecor-0-plugin-1-cairo:i386			install
+libdee-1.0-4:amd64				install
+libdeflate0:amd64				install
+libdeflate0:i386				install
+libdevel-callchecker-perl			install
+libdevel-caller-perl				install
+libdevel-globaldestruction-perl			install
+libdevel-lexalias-perl				install
+libdevel-size-perl				install
+libdevel-stacktrace-perl			install
+libdevmapper-event1.02.1:amd64			install
+libdevmapper1.02.1:amd64			install
+libdframeworkdbus2:amd64			install
+libdist-checkconflicts-perl			install
+libdjvulibre-text				install
+libdjvulibre21:amd64				install
+libdleyna-connector-dbus-1.0-1:amd64		install
+libdleyna-core-1.0-5:amd64			install
+libdmapsharing-3.0-2:amd64			install
+libdns-export1110				install
+libdotconf0:amd64				install
+libdouble-conversion3:amd64			install
+libdpkg-perl					install
+libdrm-amdgpu1:amd64				install
+libdrm-amdgpu1:i386				install
+libdrm-common					install
+libdrm-intel1:amd64				install
+libdrm-intel1:i386				install
+libdrm-nouveau2:amd64				install
+libdrm-nouveau2:i386				install
+libdrm-radeon1:amd64				install
+libdrm-radeon1:i386				install
+libdrm2:amd64					install
+libdrm2:i386					install
+libdtkcommon					install
+libdtkcore5:amd64				install
+libdtkgui5:amd64				install
+libdtkwidget5:amd64				install
+libdv4:amd64					install
+libdv4:i386					install
+libdvbpsi10:amd64				install
+libdvdnav4:amd64				install
+libdvdread8:amd64				install
+libdw1:amd64					install
+libdw1:i386					install
+libdynaloader-functions-perl			install
+libebackend-1.2-10:amd64			install
+libebml5:amd64					install
+libebook-1.2-20:amd64				install
+libebook-contacts-1.2-3:amd64			install
+libecal-2.0-1:amd64				install
+libecryptfs1					install
+libedata-book-1.2-26:amd64			install
+libedata-cal-2.0-1:amd64			install
+libedataserver-1.2-26:amd64			install
+libedataserverui-1.2-3:amd64			install
+libedit2:amd64					install
+libedit2:i386					install
+libefiboot1:amd64				install
+libefivar1:amd64				install
+libegl-dev:amd64				install
+libegl-mesa0:amd64				install
+libegl1:amd64					install
+libelf1:amd64					install
+libelf1:i386					install
+libemail-address-xs-perl			install
+libemail-date-format-perl			install
+libembree3-3:amd64				install
+libemf1:amd64					install
+libenca0:amd64					install
+libenchant-2-2:amd64				install
+libencode-hanextra-perl				install
+libencode-locale-perl				install
+libencode-perl:amd64				install
+libeot0:amd64					install
+libepoxy0:amd64					install
+libept1.6.0:amd64				install
+liberror-perl					install
+libespeak-ng1:amd64				install
+libestr0:amd64					install
+libeval-closure-perl				install
+libevdev2:amd64					install
+libevdocument3-4:amd64				install
+libevent-2.1-7:amd64				install
+libevent-core-2.1-7:amd64			install
+libevent-dev					install
+libevent-extra-2.1-7:amd64			install
+libevent-openssl-2.1-7:amd64			install
+libevent-pthreads-2.1-7:amd64			install
+libevview3-3:amd64				install
+libexception-class-perl				install
+libexempi8:amd64				install
+libexif12:amd64					install
+libexif12:i386					install
+libexiv2-27:amd64				install
+libexiv2-dev:amd64				install
+libexpat1:amd64					install
+libexpat1:i386					install
+libexpat1-dev:amd64				install
+libexporter-tiny-perl				install
+libext2fs2:amd64				install
+libexttextcat-2.0-0:amd64			install
+libexttextcat-data				install
+libextutils-depends-perl			install
+libfaad2:amd64					install
+libfabric1:amd64				install
+libfakeroot:amd64				install
+libfastjson4:amd64				install
+libfaudio0:amd64				install
+libfaudio0:i386					install
+libfdisk1:amd64					install
+libfdk-aac2:amd64				install
+libffado2:amd64					install
+libffi-dev:amd64				install
+libffi8:amd64					install
+libffi8:i386					install
+libffmpegthumbnailer4v5:amd64			install
+libfftw3-bin					install
+libfftw3-dev:amd64				install
+libfftw3-double3:amd64				install
+libfftw3-long3:amd64				install
+libfftw3-quad3:amd64				install
+libfftw3-single3:amd64				install
+libfido2-1:amd64				install
+libfile-basedir-perl				install
+libfile-desktopentry-perl			install
+libfile-fcntllock-perl				install
+libfile-find-rule-perl				install
+libfile-homedir-perl				install
+libfile-listing-perl				install
+libfile-mimeinfo-perl				install
+libfile-stripnondeterminism-perl		install
+libfile-which-perl				install
+libfirmware-manager				install
+libfl-dev:amd64					install
+libfl2:amd64					install
+libflac8:amd64					install
+libflac8:i386					install
+libflashrom1:amd64				install
+libflatpak-dev:amd64				install
+libflatpak0:amd64				install
+libflite1:amd64					install
+libfltk-gl1.3:amd64				install
+libfltk1.3:amd64				install
+libfolks-eds26:amd64				install
+libfolks26:amd64				install
+libfont-afm-perl				install
+libfont-ttf-perl				install
+libfontbox-java					install
+libfontconfig1:amd64				install
+libfontconfig1:i386				install
+libfontembed1:amd64				install
+libfontenc1:amd64				install
+libfreeaptx0:amd64				install
+libfreerdp-client2-2:amd64			install
+libfreerdp-server2-2:amd64			install
+libfreerdp2-2:amd64				install
+libfreetype6:amd64				install
+libfreetype6:i386				install
+libfreexl1:amd64				install
+libfribidi0:amd64				install
+libfribidi0:i386				install
+libftdi1:amd64					install
+libftdi1-2:amd64				install
+libfuse2:amd64					install
+libfuse3-3:amd64				install
+libfwupd2:amd64					install
+libfwupdplugin5					install
+libfyba0:amd64					install
+libgail-common:amd64				install
+libgail-common:i386				install
+libgail18:amd64					install
+libgail18:i386					install
+libgamin0					install
+libgbm1:amd64					install
+libgbm1:i386					install
+libgc1:amd64					install
+libgcab-1.0-0:amd64				install
+libgcc-11-dev:amd64				install
+libgcc-12-dev:amd64				install
+libgcc-s1:amd64					install
+libgcc-s1:i386					install
+libgck-1-0:amd64				install
+libgcr-base-3-1:amd64				install
+libgcr-ui-3-1:amd64				install
+libgcrypt20:amd64				install
+libgcrypt20:i386				install
+libgd3:amd64					install
+libgd3:i386					install
+libgdal30					install
+libgdata-common					install
+libgdata22:amd64				install
+libgdbm-compat4:amd64				install
+libgdbm6:amd64					install
+libgdcm3.0:amd64				install
+libgdiplus					install
+libgdk-pixbuf-2.0-0:amd64			install
+libgdk-pixbuf-2.0-0:i386			install
+libgdk-pixbuf2.0-bin				install
+libgdk-pixbuf2.0-common				install
+libgdm1						install
+libgee-0.8-2:amd64				install
+libgeoclue-2-0:amd64				install
+libgeocode-glib0:amd64				install
+libgeos-c1v5:amd64				install
+libgeos3.10.2:amd64				install
+libgeotiff5:amd64				install
+libgexiv2-2:amd64				install
+libgexiv2-dev:amd64				install
+libgfbgraph-0.2-0:amd64				install
+libgfortran-11-dev:amd64			install
+libgfortran5:amd64				install
+libgif7:amd64					install
+libgirepository-1.0-1:amd64			install
+libgjs0g:amd64					install
+libgl-dev:amd64					install
+libgl1:amd64					install
+libgl1:i386					install
+libgl1-mesa-dev:amd64				install
+libgl1-mesa-dri:amd64				install
+libgl1-mesa-dri:i386				install
+libglapi-mesa:amd64				install
+libglapi-mesa:i386				install
+libgles-dev:amd64				install
+libgles1:amd64					install
+libgles2:amd64					install
+libglew2.2:amd64				install
+libglib-object-introspection-perl		install
+libglib-perl:amd64				install
+libglib2.0-0:amd64				install
+libglib2.0-0:i386				install
+libglib2.0-bin					install
+libglib2.0-data					install
+libglib2.0-dev:amd64				install
+libglib2.0-dev-bin				install
+libglibmm-2.4-1v5:amd64				install
+libglu1-mesa:amd64				install
+libglu1-mesa-dev:amd64				install
+libglvnd-core-dev:amd64				install
+libglvnd-dev:amd64				install
+libglvnd0:amd64					install
+libglvnd0:i386					install
+libglx-dev:amd64				install
+libglx-mesa0:amd64				install
+libglx-mesa0:i386				install
+libglx0:amd64					install
+libglx0:i386					install
+libgme0:amd64					install
+libgmp-dev:amd64				install
+libgmp10:amd64					install
+libgmp10:i386					install
+libgmpxx4ldbl:amd64				install
+libgnome-autoar-0-0:amd64			install
+libgnome-bg-4-1:amd64				install
+libgnome-bluetooth-3.0-13:amd64			install
+libgnome-bluetooth13:amd64			install
+libgnome-desktop-3-19:amd64			install
+libgnome-desktop-4-1:amd64			install
+libgnome-menu-3-0:amd64				install
+libgnomekbd-common				install
+libgnomekbd8:amd64				install
+libgnutls30:amd64				install
+libgnutls30:i386				install
+libgoa-1.0-0b:amd64				install
+libgoa-1.0-common				install
+libgoa-backend-1.0-1:amd64			install
+libgom-1.0-0:amd64				install
+libgomp1:amd64					install
+libgpg-error-l10n				install
+libgpg-error0:amd64				install
+libgpg-error0:i386				install
+libgpgme11:amd64				install
+libgpgmepp6:amd64				install
+libgphoto2-6:amd64				install
+libgphoto2-6:i386				install
+libgphoto2-l10n					install
+libgphoto2-port12:amd64				install
+libgphoto2-port12:i386				install
+libgpm2:amd64					install
+libgpm2:i386					install
+libgranite-common				install
+libgranite6:amd64				install
+libgraphene-1.0-0:amd64				install
+libgraphite2-3:amd64				install
+libgraphite2-3:i386				install
+libgrilo-0.3-0:amd64				install
+libgs9:amd64					install
+libgs9-common					install
+libgsettings-qt1:amd64				install
+libgsf-1-114:amd64				install
+libgsf-1-common					install
+libgsm1:amd64					install
+libgsm1:i386					install
+libgsound0:amd64				install
+libgspell-1-2:amd64				install
+libgspell-1-common				install
+libgssapi-krb5-2:amd64				install
+libgssapi-krb5-2:i386				install
+libgssdp-1.2-0:amd64				install
+libgstreamer-gl1.0-0:amd64			install
+libgstreamer-plugins-bad1.0-0:amd64		install
+libgstreamer-plugins-base1.0-0:amd64		install
+libgstreamer-plugins-base1.0-0:i386		install
+libgstreamer-plugins-good1.0-0:amd64		install
+libgstreamer-plugins-good1.0-0:i386		install
+libgstreamer1.0-0:amd64				install
+libgstreamer1.0-0:i386				install
+libgtk-3-0:amd64				install
+libgtk-3-bin					install
+libgtk-3-common					install
+libgtk-4-1:amd64				install
+libgtk-4-bin					install
+libgtk-4-common					install
+libgtk2.0-0:amd64				install
+libgtk2.0-0:i386				install
+libgtk2.0-bin					install
+libgtk2.0-common				install
+libgtk3-perl					install
+libgtkmm-3.0-1v5:amd64				install
+libgtksourceview-4-0:amd64			install
+libgtksourceview-4-common			install
+libgtop-2.0-11:amd64				install
+libgtop2-common					install
+libgucharmap-2-90-7:amd64			install
+libgudev-1.0-0:amd64				install
+libgudev-1.0-0:i386				install
+libgupnp-1.2-1:amd64				install
+libgupnp-av-1.0-3				install
+libgupnp-dlna-2.0-4				install
+libgusb2:amd64					install
+libgutenprint-common				install
+libgutenprint9					install
+libgweather-3-16:amd64				install
+libgweather-4-0:amd64				install
+libgweather-4-common				install
+libgweather-common				install
+libgxps2:amd64					install
+libhandy-1-0:amd64				install
+libharfbuzz-icu0:amd64				install
+libharfbuzz0b:amd64				install
+libharfbuzz0b:i386				install
+libhdf4-0-alt					install
+libhdf5-103-1:amd64				install
+libhdf5-hl-100:amd64				install
+libheif1:amd64					install
+libhfstospell11:amd64				install
+libhidapi-libusb0:amd64				install
+libhogweed6:amd64				install
+libhogweed6:i386				install
+libhpmud0:amd64					install
+libhtml-form-perl				install
+libhtml-format-perl				install
+libhtml-html5-entities-perl			install
+libhtml-parser-perl:amd64			install
+libhtml-tagset-perl				install
+libhtml-tree-perl				install
+libhttp-cookies-perl				install
+libhttp-daemon-perl				install
+libhttp-date-perl				install
+libhttp-message-perl				install
+libhttp-negotiate-perl				install
+libhunspell-1.7-0:amd64				install
+libhwloc-dev:amd64				install
+libhwloc-plugins:amd64				install
+libhwloc15:amd64				install
+libhyphen0:amd64				install
+libibus-1.0-5:amd64				install
+libibverbs-dev:amd64				install
+libibverbs1:amd64				install
+libical3:amd64					install
+libice-dev:amd64				install
+libice6:amd64					install
+libicu-dev:amd64				install
+libicu70:amd64					install
+libicu70:i386					install
+libid3tag0:amd64				install
+libidn12:amd64					install
+libidn2-0:amd64					install
+libidn2-0:i386					install
+libiec61883-0:amd64				install
+libiec61883-0:i386				install
+libieee1284-3:amd64				install
+libigdgmm12:amd64				install
+libijs-0.35:amd64				install
+libilmbase25:amd64				install
+libimagequant0:amd64				install
+libimlib2:amd64					install
+libimobiledevice6:amd64				install
+libimport-into-perl				install
+libinput-bin					install
+libinput10:amd64				install
+libio-html-perl					install
+libio-interactive-perl				install
+libio-prompt-tiny-perl				install
+libio-pty-perl					install
+libio-socket-ssl-perl				install
+libio-string-perl				install
+libio-stringy-perl				install
+libip4tc2:amd64					install
+libip6tc2:amd64					install
+libipc-run-perl					install
+libipc-run3-perl				install
+libipc-shareable-perl				install
+libipc-system-simple-perl			install
+libisc-export1105:amd64				install
+libisl23:amd64					install
+libisofs6:amd64					install
+libiterator-perl				install
+libiterator-util-perl				install
+libitm1:amd64					install
+libiw30:amd64					install
+libixml10:amd64					install
+libjack-jackd2-0:amd64				install
+libjack-jackd2-0:i386				install
+libjansson4:amd64				install
+libjavascriptcoregtk-4.0-18:amd64		install
+libjbig0:amd64					install
+libjbig0:i386					install
+libjbig2dec0:amd64				install
+libjcat1:amd64					install
+libjemalloc2:amd64				install
+libjpeg-dev:amd64				install
+libjpeg-turbo8:amd64				install
+libjpeg-turbo8:i386				install
+libjpeg-turbo8-dev:amd64			install
+libjpeg8:amd64					install
+libjpeg8:i386					install
+libjpeg8-dev:amd64				install
+libjq1:amd64					install
+libjs-events					install
+libjs-highlight.js				install
+libjs-inherits					install
+libjs-is-typedarray				install
+libjs-jquery					install
+libjs-jquery-ui					install
+libjs-psl					install
+libjs-source-map				install
+libjs-sphinxdoc					install
+libjs-sprintf-js				install
+libjs-typedarray-to-buffer			install
+libjs-underscore				install
+libjson-c5:amd64				install
+libjson-glib-1.0-0:amd64			install
+libjson-glib-1.0-common				install
+libjson-maybexs-perl				install
+libjson-perl					install
+libjson-xs-perl					install
+libjte2:amd64					install
+libjxr-tools					install
+libjxr0:amd64					install
+libk5crypto3:amd64				install
+libk5crypto3:i386				install
+libkate1:amd64					install
+libkdsoap1:amd64				install
+libkeyutils1:amd64				install
+libkeyutils1:i386				install
+libkf5activities5:amd64				install
+libkf5activitiesstats1:amd64			install
+libkf5archive5:amd64				install
+libkf5auth-data					install
+libkf5authcore5:amd64				install
+libkf5bookmarks-data				install
+libkf5bookmarks5:amd64				install
+libkf5codecs-data				install
+libkf5codecs5:amd64				install
+libkf5completion-data				install
+libkf5completion5:amd64				install
+libkf5config-bin				install
+libkf5config-data				install
+libkf5configcore5:amd64				install
+libkf5configgui5:amd64				install
+libkf5configwidgets-data			install
+libkf5configwidgets5:amd64			install
+libkf5coreaddons-data				install
+libkf5coreaddons5:amd64				install
+libkf5crash5:amd64				install
+libkf5dbusaddons-bin				install
+libkf5dbusaddons-data				install
+libkf5dbusaddons5:amd64				install
+libkf5dnssd-data				install
+libkf5dnssd5:amd64				install
+libkf5doctools5:amd64				install
+libkf5globalaccel-bin				install
+libkf5globalaccel-data				install
+libkf5globalaccel5:amd64			install
+libkf5globalaccelprivate5:amd64			install
+libkf5guiaddons-bin				install
+libkf5guiaddons-data				install
+libkf5guiaddons5:amd64				install
+libkf5i18n-data					install
+libkf5i18n5:amd64				install
+libkf5iconthemes-bin				install
+libkf5iconthemes-data				install
+libkf5iconthemes5:amd64				install
+libkf5idletime5:amd64				install
+libkf5itemviews-data				install
+libkf5itemviews5:amd64				install
+libkf5jobwidgets-data				install
+libkf5jobwidgets5:amd64				install
+libkf5kiocore5:amd64				install
+libkf5kiofilewidgets5:amd64			install
+libkf5kiogui5:amd64				install
+libkf5kiontlm5:amd64				install
+libkf5kiowidgets5:amd64				install
+libkf5notifications-data			install
+libkf5notifications5:amd64			install
+libkf5parts-data				install
+libkf5parts-plugins				install
+libkf5parts5:amd64				install
+libkf5service-bin				install
+libkf5service-data				install
+libkf5service5:amd64				install
+libkf5solid5:amd64				install
+libkf5solid5-data				install
+libkf5sonnet5-data				install
+libkf5sonnetcore5:amd64				install
+libkf5sonnetui5:amd64				install
+libkf5syntaxhighlighting-data			install
+libkf5syntaxhighlighting5:amd64			install
+libkf5textwidgets-data				install
+libkf5textwidgets5:amd64			install
+libkf5wallet-bin				install
+libkf5wallet-data				install
+libkf5wallet5:amd64				install
+libkf5waylandclient5:amd64			install
+libkf5widgetsaddons-data			install
+libkf5widgetsaddons5:amd64			install
+libkf5windowsystem-data				install
+libkf5windowsystem5:amd64			install
+libkf5xmlgui-bin:amd64				install
+libkf5xmlgui-data				install
+libkf5xmlgui5:amd64				install
+libklibc:amd64					install
+libkmlbase1:amd64				install
+libkmldom1:amd64				install
+libkmlengine1:amd64				install
+libkmod2:amd64					install
+libkpathsea6:amd64				install
+libkrb5-3:amd64					install
+libkrb5-3:i386					install
+libkrb5support0:amd64				install
+libkrb5support0:i386				install
+libksba8:amd64					install
+libkwalletbackend5-5:amd64			install
+liblangtag-common				install
+liblangtag1:amd64				install
+liblapack-dev:amd64				install
+liblapack3:amd64				install
+liblbfgsb0:amd64				install
+liblcms2-2:amd64				install
+liblcms2-2:i386					install
+liblcms2-utils					install
+libldacbt-abr2:amd64				install
+libldacbt-enc2:amd64				install
+libldap-2.5-0:amd64				install
+libldap-2.5-0:i386				install
+libldap-common					install
+libldb2:amd64					install
+liblilv-0-0:amd64				install
+liblirc-client0:amd64				install
+liblist-compare-perl				install
+liblist-moreutils-perl				install
+liblist-moreutils-xs-perl			install
+liblist-someutils-perl				install
+liblist-someutils-xs-perl			install
+liblist-utilsby-perl				install
+libllvm11:amd64					install
+libllvm14:amd64					install
+libllvm15:amd64					install
+libllvm15:i386					install
+liblmdb0:amd64					install
+liblocale-gettext-perl				install
+liblog-dispatch-perl				install
+liblog-log4perl-perl				install
+liblog4cplus-2.0.5:amd64			install
+liblouis-data					install
+liblouis20:amd64				install
+liblouisutdml-bin				install
+liblouisutdml-data				install
+liblouisutdml9:amd64				install
+liblqr-1-0:amd64				install
+liblsan0:amd64					install
+libltdl-dev:amd64				install
+libltdl7:amd64					install
+libltdl7:i386					install
+liblua5.1-0:amd64				install
+liblua5.2-0:amd64				install
+liblua5.3-0:amd64				install
+liblua5.4-0:amd64				install
+liblvm2cmd2.03:amd64				install
+liblwp-mediatypes-perl				install
+liblwp-protocol-https-perl			install
+liblz4-1:amd64					install
+liblz4-1:i386					install
+liblzma-dev:amd64				install
+liblzma5:amd64					install
+liblzma5:i386					install
+liblzo2-2:amd64					install
+libmad0:amd64					install
+libmagic-mgc					install
+libmagic1:amd64					install
+libmagick++-6.q16-8:amd64			install
+libmagickcore-6.q16-6:amd64			install
+libmagickcore-6.q16-6-extra:amd64		install
+libmagickwand-6.q16-6:amd64			install
+libmail-sendmail-perl				install
+libmailtools-perl				install
+libmalcontent-0-0:amd64				install
+libmanette-0.2-0:amd64				install
+libmarisa0:amd64				install
+libmarkdown2:amd64				install
+libmath-base85-perl				install
+libmatroska7:amd64				install
+libmaxminddb0:amd64				install
+libmbim-glib4:amd64				install
+libmbim-proxy					install
+libmd0:amd64					install
+libmd0:i386					install
+libmd4c0:amd64					install
+libmediaart-2.0-0:amd64				install
+libmfx1:amd64					install
+libmhash2:amd64					install
+libmime-charset-perl				install
+libmime-lite-perl				install
+libmime-types-perl				install
+libminizip1:amd64				install
+libmm-glib0:amd64				install
+libmng2:amd64					install
+libmnl0:amd64					install
+libmodule-implementation-perl			install
+libmodule-runtime-perl				install
+libmoo-perl					install
+libmoox-aliases-perl				install
+libmount-dev:amd64				install
+libmount1:amd64					install
+libmount1:i386					install
+libmouse-perl					install
+libmozjs-91-0:amd64				install
+libmp3lame0:amd64				install
+libmp3lame0:i386				install
+libmpc3:amd64					install
+libmpcdec6:amd64				install
+libmpdec3:amd64					install
+libmpeg2-4:amd64				install
+libmpfr-dev:amd64				install
+libmpfr6:amd64					install
+libmpg123-0:amd64				install
+libmpg123-0:i386				install
+libmro-compat-perl				install
+libmspack0:amd64				install
+libmtdev1:amd64					install
+libmtp-common					install
+libmtp-runtime					install
+libmtp9:amd64					install
+libmujs1:amd64					install
+libmutter-10-0:amd64				install
+libmysofa1:amd64				install
+libmysqlclient21:amd64				install
+libmythes-1.2-0:amd64				install
+libnamespace-autoclean-perl			install
+libnamespace-clean-perl				install
+libnautilus-extension1a:amd64			install
+libncurses-dev:amd64				install
+libncurses5-dev:amd64				install
+libncurses6:amd64				install
+libncurses6:i386				install
+libncursesw6:amd64				install
+libncursesw6:i386				install
+libndp0:amd64					install
+libnet-dbus-perl				install
+libnet-domain-tld-perl				install
+libnet-http-perl				install
+libnet-ipv6addr-perl				install
+libnet-netmask-perl				install
+libnet-smtp-ssl-perl				install
+libnet-ssleay-perl:amd64			install
+libnetaddr-ip-perl				install
+libnetcdf19:amd64				install
+libnetfilter-conntrack3:amd64			install
+libnetplan0:amd64				install
+libnettle8:amd64				install
+libnettle8:i386					install
+libnewt0.52:amd64				install
+libnfnetlink0:amd64				install
+libnfs13:amd64					install
+libnftables1:amd64				install
+libnftnl11:amd64				install
+libnghttp2-14:amd64				install
+libnghttp2-14:i386				install
+libnl-3-200:amd64				install
+libnl-3-dev:amd64				install
+libnl-genl-3-200:amd64				install
+libnl-route-3-200:amd64				install
+libnl-route-3-dev:amd64				install
+libnm0:amd64					install
+libnma-common					install
+libnma0:amd64					install
+libnode-dev					install
+libnode72:amd64					install
+libnorm1:amd64					install
+libnotify-bin					install
+libnotify4:amd64				install
+libnpth0:amd64					install
+libnsl-dev:amd64				install
+libnsl2:amd64					install
+libnsl2:i386					install
+libnspr4:amd64					install
+libnss-mdns:amd64				install
+libnss-myhostname:amd64				install
+libnss-nis:i386					install
+libnss-nisplus:i386				install
+libnss-systemd:amd64				install
+libnss3:amd64					install
+libntfs-3g89					install
+libnuma-dev:amd64				install
+libnuma1:amd64					install
+libnumber-compare-perl				install
+libnvidia-cfg1-545:amd64			install
+libnvidia-common-545				install
+libnvidia-compute-545:amd64			install
+libnvidia-compute-545:i386			install
+libnvidia-decode-545:amd64			install
+libnvidia-decode-545:i386			install
+libnvidia-egl-wayland1:amd64			install
+libnvidia-encode-545:amd64			install
+libnvidia-encode-545:i386			install
+libnvidia-extra-545:amd64			install
+libnvidia-fbc1-545:amd64			install
+libnvidia-fbc1-545:i386				install
+libnvidia-gl-545:amd64				install
+libnvidia-gl-545:i386				install
+liboauth0:amd64					install
+libobjc-11-dev:amd64				install
+libobjc4:amd64					install
+libodbc1:amd64					install
+libodbc1:i386					install
+libodbc2:amd64					install
+libodbc2:i386					install
+libodbccr2:amd64				install
+libodbccr2:i386					install
+libodbcinst2:amd64				install
+libogdi4.1					install
+libogg0:amd64					install
+libogg0:i386					install
+libonig5:amd64					install
+libopenal-data					install
+libopenal1:amd64				install
+libopenal1:i386					install
+libopenblas-dev:amd64				install
+libopenblas-pthread-dev:amd64			install
+libopenblas0:amd64				install
+libopenblas0-pthread:amd64			install
+libopencc-data					install
+libopencc1.1					install
+libopencolorio1v5				install
+libopencore-amrnb0:amd64			install
+libopencore-amrwb0:amd64			install
+libopencv-core4.5d:amd64			install
+libopencv-imgcodecs4.5d:amd64			install
+libopencv-imgproc4.5d:amd64			install
+libopencv-videoio4.5d:amd64			install
+libopenexr25:amd64				install
+libopengl-dev:amd64				install
+libopengl0:amd64				install
+libopenimageio2.2:amd64				install
+libopenjp2-7:amd64				install
+libopenmpi-dev:amd64				install
+libopenmpi3:amd64				install
+libopenmpt-modplug1:amd64			install
+libopenmpt0:amd64				install
+libopenvdb8.1					install
+libopus0:amd64					install
+libopus0:i386					install
+liborc-0.4-0:amd64				install
+liborc-0.4-0:i386				install
+liborcus-0.17-0:amd64				install
+liborcus-parser-0.17-0:amd64			install
+libosdcpu3.4.4:amd64				install
+libosmesa6:amd64				install
+libosmesa6:i386					install
+libostree-1-1:amd64				install
+libostree-dev:amd64				install
+libp11-kit0:amd64				install
+libp11-kit0:i386				install
+libpackage-stash-perl				install
+libpackage-stash-xs-perl			install
+libpackagekit-glib2-18:amd64			install
+libpadwalker-perl				install
+libpam-cap:amd64				install
+libpam-gnome-keyring:amd64			install
+libpam-modules:amd64				install
+libpam-modules-bin				install
+libpam-runtime					install
+libpam-systemd:amd64				install
+libpam0g:amd64					install
+libpango-1.0-0:amd64				install
+libpango-1.0-0:i386				install
+libpangocairo-1.0-0:amd64			install
+libpangocairo-1.0-0:i386			install
+libpangoft2-1.0-0:amd64				install
+libpangoft2-1.0-0:i386				install
+libpangomm-1.4-1v5:amd64			install
+libpangoxft-1.0-0:amd64				install
+libpaper-utils					install
+libpaper1:amd64					install
+libparams-classify-perl				install
+libparams-util-perl				install
+libparams-validationcompiler-perl		install
+libparted-fs-resize0:amd64			install
+libparted2:amd64				install
+libpath-tiny-perl				install
+libpcap0.8:amd64				install
+libpcap0.8:i386					install
+libpcaudio0:amd64				install
+libpci3:amd64					install
+libpciaccess0:amd64				install
+libpciaccess0:i386				install
+libpcre16-3:amd64				install
+libpcre2-16-0:amd64				install
+libpcre2-32-0:amd64				install
+libpcre2-8-0:amd64				install
+libpcre2-8-0:i386				install
+libpcre2-dev:amd64				install
+libpcre2-posix3:amd64				install
+libpcre3:amd64					install
+libpcre3:i386					install
+libpcre3-dev:amd64				install
+libpcre32-3:amd64				install
+libpcrecpp0v5:amd64				install
+libpcsclite1:amd64				install
+libpdfbox-java					install
+libpeas-1.0-0:amd64				install
+libpeas-common					install
+libperl4-corelibs-perl				install
+libperl5.34:amd64				install
+libperlio-gzip-perl				install
+libperlio-utf8-strict-perl			install
+libpgm-5.3-0:amd64				install
+libphonenumber8:amd64				install
+libphonon4qt5-4:amd64				install
+libphonon4qt5-data				install
+libpinyin-data:amd64				install
+libpinyin13:amd64				install
+libpipeline1:amd64				install
+libpipewire-0.3-0:amd64				install
+libpipewire-0.3-common				install
+libpipewire-0.3-modules:amd64			install
+libpixman-1-0:amd64				install
+libpixman-1-0:i386				install
+libpkcs11-helper1:amd64				install
+libplacebo192:amd64				install
+libplank-common					install
+libplank1:amd64					install
+libplist3:amd64					install
+libplot2c2:amd64				install
+libplymouth5:amd64				install
+libpmix-dev:amd64				install
+libpmix2:amd64					install
+libpng-dev:amd64				install
+libpng-tools					install
+libpng16-16:amd64				install
+libpng16-16:i386				install
+libpocketsphinx3:amd64				install
+libpocofoundation80:amd64			install
+libpocoxml80:amd64				install
+libpocozip80:amd64				install
+libpolkit-agent-1-0:amd64			install
+libpolkit-gobject-1-0:amd64			install
+libpolkit-qt5-1-1:amd64				install
+libpop-analytics-panel				install
+libpop-desktop-widget				install
+libpop-support-panel				install
+libpop-system-updater-gtk			install
+libpop-theme-switcher				install
+libpop-upgrade-gtk				install
+libpoppler-cpp0v5:amd64				install
+libpoppler-glib8:amd64				install
+libpoppler-qt5-1:amd64				install
+libpoppler118:amd64				install
+libpopt0:amd64					install
+libportaudio2:amd64				install
+libpostproc55:amd64				install
+libpq5:amd64					install
+libproc-processtable-perl:amd64			install
+libprocps8:amd64				install
+libproj22:amd64					install
+libprotobuf-c1:amd64				install
+libprotobuf-lite23:amd64			install
+libprotobuf23:amd64				install
+libproxy-tools					install
+libproxy1-plugin-gsettings:amd64		install
+libproxy1-plugin-networkmanager:amd64		install
+libproxy1v5:amd64				install
+libproxy1v5:i386				install
+libpsl5:amd64					install
+libpsl5:i386					install
+libpsm-infinipath1				install
+libpsm2-2					install
+libpstoedit0c2a:amd64				install
+libptexenc1:amd64				install
+libpthread-stubs0-dev:amd64			install
+libptscotch-6.1:amd64				install
+libptscotch-dev					install
+libpugixml1v5:amd64				install
+libpulse-mainloop-glib0:amd64			install
+libpulse0:amd64					install
+libpulse0:i386					install
+libpulsedsp:amd64				install
+libpwquality-common				install
+libpwquality1:amd64				install
+libpython3-dev:amd64				install
+libpython3-stdlib:amd64				install
+libpython3.10:amd64				install
+libpython3.10-dev:amd64				install
+libpython3.10-minimal:amd64			install
+libpython3.10-stdlib:amd64			install
+libqalculate-data				install
+libqalculate22:amd64				install
+libqhull-r8.0:amd64				install
+libqmi-glib5:amd64				install
+libqmi-proxy					install
+libqpdf28:amd64					install
+libqt5concurrent5:amd64				install
+libqt5core5a:amd64				install
+libqt5dbus5:amd64				install
+libqt5designer5:amd64				install
+libqt5gui5:amd64				install
+libqt5help5:amd64				install
+libqt5location5:amd64				install
+libqt5multimedia5:amd64				install
+libqt5multimediawidgets5:amd64			install
+libqt5network5:amd64				install
+libqt5opengl5:amd64				install
+libqt5opengl5-dev:amd64				install
+libqt5positioning5:amd64			install
+libqt5positioningquick5:amd64			install
+libqt5printsupport5:amd64			install
+libqt5qml5:amd64				install
+libqt5qmlmodels5:amd64				install
+libqt5quick5:amd64				install
+libqt5quickwidgets5:amd64			install
+libqt5sensors5:amd64				install
+libqt5serialport5:amd64				install
+libqt5sql5:amd64				install
+libqt5sql5-sqlite:amd64				install
+libqt5svg5:amd64				install
+libqt5test5:amd64				install
+libqt5texttospeech5:amd64			install
+libqt5waylandclient5:amd64			install
+libqt5waylandcompositor5:amd64			install
+libqt5webchannel5:amd64				install
+libqt5webengine-data				install
+libqt5webengine5:amd64				install
+libqt5webenginecore5:amd64			install
+libqt5webenginewidgets5:amd64			install
+libqt5webkit5:amd64				install
+libqt5websockets5:amd64				install
+libqt5widgets5:amd64				install
+libqt5x11extras5:amd64				install
+libqt5xdg3:amd64				install
+libqt5xdgiconloader3:amd64			install
+libqt5xml5:amd64				install
+libqt5xmlpatterns5:amd64			install
+libquadmath0:amd64				install
+librabbitmq4:amd64				install
+libraptor2-0:amd64				install
+libraqm0:amd64					install
+librasqal3:amd64				install
+libraw1394-11:amd64				install
+libraw1394-11:i386				install
+libraw20:amd64					install
+librdf0:amd64					install
+librdmacm1:amd64				install
+libre2-9:amd64					install
+libreadline-dev:amd64				install
+libreadline8:amd64				install
+libreadonly-perl				install
+libref-util-perl				install
+libref-util-xs-perl				install
+libregexp-assemble-perl				install
+libreoffice-common				install
+libresid-builder0c2a				install
+librest-0.7-0:amd64				install
+librevenge-0.0-0:amd64				install
+librole-tiny-perl				install
+librrd8:amd64					install
+librrds-perl:amd64				install
+librsvg2-2:amd64				install
+librsvg2-2:i386					install
+librsvg2-common:amd64				install
+librsvg2-common:i386				install
+librtmp1:amd64					install
+librtmp1:i386					install
+librttopo1:amd64				install
+librubberband2:amd64				install
+libruby3.0:amd64				install
+librygel-core-2.6-2:amd64			install
+librygel-db-2.6-2:amd64				install
+librygel-renderer-2.6-2:amd64			install
+librygel-server-2.6-2:amd64			install
+libs76-hidpi-widget				install
+libsamplerate0:amd64				install
+libsamplerate0:i386				install
+libsane-common					install
+libsane1:amd64					install
+libsasl2-2:amd64				install
+libsasl2-2:i386					install
+libsasl2-modules:i386				install
+libsasl2-modules-db:amd64			install
+libsasl2-modules-db:i386			install
+libsbc1:amd64					install
+libscalar-list-utils-perl			install
+libscotch-6.1:amd64				install
+libscotch-dev					install
+libsdl-image1.2:amd64				install
+libsdl1.2debian:amd64				install
+libsdl2-2.0-0:amd64				install
+libsdl2-2.0-0:i386				install
+libseccomp2:amd64				install
+libsecret-1-0:amd64				install
+libsecret-common				install
+libselinux1:amd64				install
+libselinux1:i386				install
+libselinux1-dev:amd64				install
+libsemanage-common				install
+libsemanage2:amd64				install
+libsensors-config				install
+libsensors5:amd64				install
+libsensors5:i386				install
+libsepol-dev:amd64				install
+libsepol2:amd64					install
+libserd-0-0:amd64				install
+libsereal-decoder-perl				install
+libsereal-encoder-perl:amd64			install
+libshine3:amd64					install
+libshout3:amd64					install
+libshout3:i386					install
+libsidplay1v5:amd64				install
+libsidplay2					install
+libsigc++-2.0-0v5:amd64				install
+libsigsegv2:amd64				install
+libsixel-bin					install
+libsixel1:amd64					install
+libslang2:amd64					install
+libslang2:i386					install
+libslirp0:amd64					install
+libsm-dev:amd64					install
+libsm6:amd64					install
+libsmartcols1:amd64				install
+libsmbclient:amd64				install
+libsmbios-c2					install
+libsnapd-glib1:amd64				install
+libsnappy1v5:amd64				install
+libsndfile1:amd64				install
+libsndfile1:i386				install
+libsndio7.0:amd64				install
+libsndio7.0:i386				install
+libsnmp-base					install
+libsnmp40:amd64					install
+libsocket++1:amd64				install
+libsocket6-perl					install
+libsodium23:amd64				install
+libsombok3:amd64				install
+libsonic0:amd64					install
+libsord-0-0:amd64				install
+libsort-versions-perl				install
+libsoup-gnome2.4-1:amd64			install
+libsoup2.4-1:amd64				install
+libsoup2.4-1:i386				install
+libsoup2.4-common				install
+libsoxr0:amd64					install
+libspa-0.2-avb:amd64				install
+libspa-0.2-bluetooth:amd64			install
+libspa-0.2-jack:amd64				install
+libspa-0.2-modules:amd64			install
+libspatialaudio0:amd64				install
+libspatialite7:amd64				install
+libspecio-perl					install
+libspectre1:amd64				install
+libspeechd2:amd64				install
+libspeex1:amd64					install
+libspeex1:i386					install
+libspeexdsp1:amd64				install
+libsphinxbase3:amd64				install
+libspnav0					install
+libsqlite3-0:amd64				install
+libsqlite3-0:i386				install
+libsquashfuse0:amd64				install
+libsquish0:amd64				install
+libsratom-0-0:amd64				install
+libsrt1.4-gnutls:amd64				install
+libss2:amd64					install
+libssh-4:amd64					install
+libssh-4:i386					install
+libssh-gcrypt-4:amd64				install
+libssh2-1:amd64					install
+libssl-dev:amd64				install
+libssl3:amd64					install
+libssl3:i386					install
+libstartup-notification0:amd64			install
+libstb0:amd64					install
+libstb0:i386					install
+libstdc++-11-dev:amd64				install
+libstdc++6:amd64				install
+libstdc++6:i386					install
+libstemmer0d:amd64				install
+libstrictures-perl				install
+libstring-crc32-perl:amd64			install
+libsub-exporter-perl				install
+libsub-exporter-progressive-perl		install
+libsub-identify-perl				install
+libsub-install-perl				install
+libsub-name-perl				install
+libsub-override-perl				install
+libsub-quote-perl				install
+libsuperlu5:amd64				install
+libswresample3:amd64				install
+libswscale5:amd64				install
+libsynctex2:amd64				install
+libsyntax-keyword-try-perl			install
+libsys-hostname-long-perl			install
+libsystemd0:amd64				install
+libsystemd0:i386				install
+libsz2:amd64					install
+libtag1v5:amd64					install
+libtag1v5:i386					install
+libtag1v5-vanilla:amd64				install
+libtag1v5-vanilla:i386				install
+libtalloc2:amd64				install
+libtasn1-6:amd64				install
+libtasn1-6:i386					install
+libtbb2:amd64					install
+libtbbmalloc2:amd64				install
+libtcl8.6:amd64					install
+libtdb1:amd64					install
+libtdb1:i386					install
+libteamdctl0:amd64				install
+libteckit0:amd64				install
+libterm-readkey-perl				install
+libtevent0:amd64				install
+libtexlua53:amd64				install
+libtexluajit2:amd64				install
+libtext-charwidth-perl				install
+libtext-glob-perl				install
+libtext-iconv-perl				install
+libtext-levenshteinxs-perl			install
+libtext-markdown-discount-perl:amd64		install
+libtext-unidecode-perl				install
+libtext-wrapi18n-perl				install
+libtext-xslate-perl:amd64			install
+libthai-data					install
+libthai0:amd64					install
+libthai0:i386					install
+libtheora0:amd64				install
+libtheora0:i386					install
+libtie-ixhash-perl				install
+libtiff5:amd64					install
+libtiff5:i386					install
+libtime-duration-perl				install
+libtime-moment-perl				install
+libtimedate-perl				install
+libtinfo6:amd64					install
+libtinfo6:i386					install
+libtinyxml2.6.2v5:amd64				install
+libtirpc-common					install
+libtirpc-dev:amd64				install
+libtirpc3:amd64					install
+libtirpc3:i386					install
+libtk8.6:amd64					install
+libtool						install
+libtotem-plparser-common			install
+libtotem-plparser18:amd64			install
+libtotem0:amd64					install
+libtracker-sparql-3.0-0:amd64			install
+libtry-tiny-perl				install
+libtsan0:amd64					install
+libtsan2:amd64					install
+libtspi1					install
+libtss2-esys-3.0.2-0:amd64			install
+libtss2-mu0:amd64				install
+libtss2-sys1:amd64				install
+libtss2-tcti-cmd0:amd64				install
+libtss2-tcti-device0:amd64			install
+libtss2-tcti-mssim0:amd64			install
+libtss2-tcti-swtpm0:amd64			install
+libtumbler-1-0:amd64				install
+libtwolame0:amd64				install
+libtwolame0:i386				install
+libtypes-serialiser-perl			install
+libubsan1:amd64					install
+libuchardet0:amd64				install
+libucx0:amd64					install
+libudev1:amd64					install
+libudev1:i386					install
+libudfread0:amd64				install
+libudisks2-0:amd64				install
+libunicode-linebreak-perl			install
+libunicode-utf8-perl				install
+libunistring2:amd64				install
+libunistring2:i386				install
+libunity-protocol-private0:amd64		install
+libunity-scopes-json-def-desktop		install
+libunity9:amd64					install
+libuno-cppu3					install
+libuno-cppuhelpergcc3-3				install
+libuno-purpenvhelpergcc3-3			install
+libuno-sal3					install
+libuno-salhelpergcc3-3				install
+libunwind8:amd64				install
+libunwind8:i386					install
+libupnp13:amd64					install
+libupower-glib3:amd64				install
+liburi-perl					install
+liburing2:amd64					install
+liburiparser1:amd64				install
+libusb-0.1-4:amd64				install
+libusb-1.0-0:amd64				install
+libusb-1.0-0:i386				install
+libusbmuxd6:amd64				install
+libutempter0:amd64				install
+libuuid1:amd64					install
+libuuid1:i386					install
+libuv1:amd64					install
+libuv1-dev:amd64				install
+libv4l-0:amd64					install
+libv4l-0:i386					install
+libv4lconvert0:amd64				install
+libv4lconvert0:i386				install
+libva-drm2:amd64				install
+libva-wayland2:amd64				install
+libva-x11-2:amd64				install
+libva2:amd64					install
+libvariable-magic-perl				install
+libvdpau-va-gl1:amd64				install
+libvdpau1:amd64					install
+libvidstab1.1:amd64				install
+libvisual-0.4-0:amd64				install
+libvisual-0.4-0:i386				install
+libvkd3d-shader1:amd64				install
+libvkd3d-shader1:i386				install
+libvkd3d1:amd64					install
+libvkd3d1:i386					install
+libvlc-bin:amd64				install
+libvlc5:amd64					install
+libvlccore9:amd64				install
+libvncclient1:amd64				install
+libvncserver1:amd64				install
+libvo-amrwbenc0:amd64				install
+libvoikko1:amd64				install
+libvolume-key1					install
+libvorbis0a:amd64				install
+libvorbis0a:i386				install
+libvorbisenc2:amd64				install
+libvorbisenc2:i386				install
+libvorbisfile3:amd64				install
+libvorbisfile3:i386				install
+libvorbisidec1:amd64				install
+libvpx7:amd64					install
+libvpx7:i386					install
+libvte-2.91-0:amd64				install
+libvte-2.91-common				install
+libvulkan-dev:amd64				install
+libvulkan1:amd64				install
+libvulkan1:i386					install
+libwacom-bin					install
+libwacom-common					install
+libwacom9:amd64					install
+libwavpack1:amd64				install
+libwavpack1:i386				install
+libwayland-client0:amd64			install
+libwayland-client0:i386				install
+libwayland-cursor0:amd64			install
+libwayland-cursor0:i386				install
+libwayland-egl1:amd64				install
+libwayland-egl1:i386				install
+libwayland-server0:amd64			install
+libwayland-server0:i386				install
+libwbclient0:amd64				install
+libwebkit2gtk-4.0-37:amd64			install
+libwebp7:amd64					install
+libwebp7:i386					install
+libwebpdemux2:amd64				install
+libwebpmux3:amd64				install
+libwebrtc-audio-processing1:amd64		install
+libwhoopsie-preferences0			install
+libwhoopsie0:amd64				install
+libwine:amd64					install
+libwine:i386					install
+libwine-development:amd64			install
+libwine-development:i386			install
+libwinpr2-2:amd64				install
+libwireplumber-0.4-0:amd64			install
+libwmflite-0.2-7:amd64				install
+libwnck-3-0:amd64				install
+libwnck-3-common				install
+libwoff1:amd64					install
+libwpe-1.0-1:amd64				install
+libwpebackend-fdo-1.0-1:amd64			install
+libwrap0:amd64					install
+libwww-perl					install
+libwww-robotrules-perl				install
+libwxbase3.0-0v5:amd64				install
+libwxgtk3.0-gtk3-0v5:amd64			install
+libx11-6:amd64					install
+libx11-6:i386					install
+libx11-data					install
+libx11-dev:amd64				install
+libx11-protocol-perl				install
+libx11-xcb1:amd64				install
+libx11-xcb1:i386				install
+libx264-163:amd64				install
+libx265-199:amd64				install
+libxapian30:amd64				install
+libxapp1:amd64					install
+libxatracker2:amd64				install
+libxau-dev:amd64				install
+libxau6:amd64					install
+libxau6:i386					install
+libxaw7:amd64					install
+libxcb-composite0:amd64				install
+libxcb-damage0:amd64				install
+libxcb-dri2-0:amd64				install
+libxcb-dri2-0:i386				install
+libxcb-dri3-0:amd64				install
+libxcb-dri3-0:i386				install
+libxcb-glx0:amd64				install
+libxcb-glx0:i386				install
+libxcb-icccm4:amd64				install
+libxcb-image0:amd64				install
+libxcb-keysyms1:amd64				install
+libxcb-present0:amd64				install
+libxcb-present0:i386				install
+libxcb-randr0:amd64				install
+libxcb-randr0:i386				install
+libxcb-render-util0:amd64			install
+libxcb-render0:amd64				install
+libxcb-render0:i386				install
+libxcb-res0:amd64				install
+libxcb-shape0:amd64				install
+libxcb-shm0:amd64				install
+libxcb-shm0:i386				install
+libxcb-sync1:amd64				install
+libxcb-sync1:i386				install
+libxcb-util1:amd64				install
+libxcb-xfixes0:amd64				install
+libxcb-xfixes0:i386				install
+libxcb-xinerama0:amd64				install
+libxcb-xinput0:amd64				install
+libxcb-xkb1:amd64				install
+libxcb-xv0:amd64				install
+libxcb1:amd64					install
+libxcb1:i386					install
+libxcb1-dev:amd64				install
+libxcomposite1:amd64				install
+libxcomposite1:i386				install
+libxcursor1:amd64				install
+libxcursor1:i386				install
+libxcvt0:amd64					install
+libxdamage1:amd64				install
+libxdamage1:i386				install
+libxdmcp-dev:amd64				install
+libxdmcp6:amd64					install
+libxdmcp6:i386					install
+libxdo3:amd64					install
+libxerces-c3.2:amd64				install
+libxext-dev:amd64				install
+libxext6:amd64					install
+libxext6:i386					install
+libxfixes3:amd64				install
+libxfixes3:i386					install
+libxfont2:amd64					install
+libxft2:amd64					install
+libxi6:amd64					install
+libxi6:i386					install
+libxinerama1:amd64				install
+libxinerama1:i386				install
+libxkbcommon-x11-0:amd64			install
+libxkbcommon0:amd64				install
+libxkbcommon0:i386				install
+libxkbfile1:amd64				install
+libxkbregistry0:amd64				install
+libxklavier16:amd64				install
+libxml++2.6-2v5:amd64				install
+libxml-libxml-perl				install
+libxml-namespacesupport-perl			install
+libxml-parser-perl:amd64			install
+libxml-sax-base-perl				install
+libxml-sax-expat-perl				install
+libxml-sax-perl					install
+libxml-twig-perl				install
+libxml-xpathengine-perl				install
+libxml2:amd64					install
+libxml2:i386					install
+libxml2-dev:amd64				install
+libxmlb2:amd64					install
+libxmlsec1:amd64				install
+libxmlsec1-nss:amd64				install
+libxmu6:amd64					install
+libxmuu1:amd64					install
+libxnvctrl0:amd64				install
+libxpm4:amd64					install
+libxpm4:i386					install
+libxrandr2:amd64				install
+libxrandr2:i386					install
+libxrender1:amd64				install
+libxrender1:i386				install
+libxres1:amd64					install
+libxs-parse-keyword-perl			install
+libxshmfence1:amd64				install
+libxshmfence1:i386				install
+libxsimd-dev:amd64				install
+libxslt1.1:amd64				install
+libxslt1.1:i386					install
+libxss1:amd64					install
+libxss1:i386					install
+libxstring-perl					install
+libxt-dev:amd64					install
+libxt6:amd64					install
+libxtables12:amd64				install
+libxtst6:amd64					install
+libxv1:amd64					install
+libxv1:i386					install
+libxvidcore4:amd64				install
+libxvmc1:amd64					install
+libxxf86dga1:amd64				install
+libxxf86vm1:amd64				install
+libxxf86vm1:i386				install
+libxxhash0:amd64				install
+libyajl2:amd64					install
+libyaml-0-2:amd64				install
+libyaml-cpp0.7:amd64				install
+libyaml-libyaml-perl				install
+libyaml-tiny-perl				install
+libyelp0:amd64					install
+libz-mingw-w64					install
+libzapojit-0.0-0:amd64				install
+libzimg2:amd64					install
+libzip4:amd64					install
+libzmq5:amd64					install
+libzstd1:amd64					install
+libzstd1:i386					install
+libzvbi-common					install
+libzvbi0:amd64					install
+libzzip-0-13:amd64				install
+lintian						install
+lm-sensors					install
+lmodern						install
+locales						install
+login						install
+logrotate					install
+logsave						install
+lsb-base					install
+lsb-release					install
+lshw						install
+lsof						install
+lto-disabled-list				install
+lua5.2						install
+lubuntu-restricted-extras			install
+lvm2						install
+lzip						install
+lzop						install
+m4						install
+make						install
+man-db						install
+manpages					install
+manpages-dev					install
+mawk						install
+mdadm						install
+media-player-info				install
+media-types					install
+mesa-utils					install
+mesa-utils-bin:amd64				install
+mesa-va-drivers:amd64				install
+mesa-vdpau-drivers:amd64			install
+mesa-vulkan-drivers:amd64			install
+mesa-vulkan-drivers:i386			install
+mobile-broadband-provider-info			install
+modemmanager					install
+mono-4.0-gac					install
+moreutils					install
+mount						install
+mpi-default-bin					install
+mpi-default-dev					install
+mplayer						install
+mpv						install
+msbuild						install
+msbuild-libhostfxr				install
+msbuild-sdkresolver				install
+mscompress					install
+mtr-tiny					install
+mutter-common					install
+mysql-common					install
+mythes-ar					install
+mythes-de					install
+mythes-de-ch					install
+mythes-en-au					install
+mythes-en-us					install
+mythes-es					install
+mythes-fr					install
+mythes-it					install
+mythes-pt-pt					install
+mythes-ru					install
+nano						install
+nautilus					install
+nautilus-data					install
+nautilus-extension-gnome-terminal		install
+nautilus-sendto					install
+ncdu						install
+ncurses-base					install
+ncurses-bin					install
+neofetch					install
+net-tools					install
+netbase						install
+netcat-openbsd					install
+netplan.io					install
+network-manager					install
+network-manager-config-connectivity-pop		install
+network-manager-gnome				install
+network-manager-openvpn				install
+network-manager-openvpn-gnome			install
+network-manager-pptp				install
+network-manager-pptp-gnome			install
+networkd-dispatcher				install
+nftables					install
+npm						install
+ntfs-3g						install
+ocl-icd-libopencl1:amd64			install
+ocl-icd-libopencl1:i386				install
+openfoam-selector				install
+openfoam2306:amd64				install
+openfoam2306-common				install
+openfoam2306-default:amd64			install
+openfoam2306-dev:amd64				install
+openfoam2306-source				install
+openfoam2306-tools:amd64			install
+openfoam2306-tutorials				install
+openjdk-11-jdk:amd64				install
+openjdk-11-jdk-headless:amd64			install
+openjdk-11-jre:amd64				install
+openjdk-11-jre-headless:amd64			install
+openjdk-17-jdk:amd64				install
+openjdk-17-jdk-headless:amd64			install
+openjdk-17-jre:amd64				install
+openjdk-17-jre-headless:amd64			install
+openmpi-bin					install
+openmpi-common					install
+openprinting-ppds				install
+openssh-client					install
+openssl						install
+openvpn						install
+openvsp						install
+orca						install
+p11-kit						install
+p11-kit-modules:amd64				install
+p7zip						install
+p7zip-full					install
+packagekit					install
+pandoc						install
+parted						install
+passwd						install
+pastebinit					install
+patch						install
+patchutils					install
+pci.ids						install
+pciutils					install
+pcmciautils					install
+perl						install
+perl-base					install
+perl-modules-5.34				install
+perl-openssl-defaults:amd64			install
+pfb2t1c2pfb					install
+phonon4qt5:amd64				install
+phonon4qt5-backend-vlc:amd64			install
+pigz						install
+pinentry-curses					install
+pinentry-gnome3					install
+pipewire:amd64					install
+pipewire-alsa:amd64				install
+pipewire-avb					install
+pipewire-bin					install
+pipewire-jack:amd64				install
+pipewire-pulse					install
+pkexec						install
+pkg-config					install
+plank						install
+plocate						install
+plymouth					install
+plymouth-label					install
+plymouth-theme-pop-basic			install
+plymouth-theme-pop-text				install
+plymouth-theme-spinner				install
+po-debconf					install
+pocketsphinx-en-us				install
+policykit-1					install
+policykit-desktop-privileges			install
+polkitd						install
+pop-container-interactive			install
+pop-container-runtime				install
+pop-cosmic					install
+pop-de-gnome					install
+pop-default-settings				install
+pop-default-settings-zram			install
+pop-desktop					install
+pop-fonts					install
+pop-gnome-initial-setup				install
+pop-gnome-shell-theme				install
+pop-gtk-theme					install
+pop-icon-theme					install
+pop-keyring					install
+pop-launcher					install
+pop-pipewire					install
+pop-plymouth-theme				install
+pop-server					install
+pop-session					install
+pop-shell					install
+pop-shell-shortcuts				install
+pop-shop					install
+pop-sound-theme					install
+pop-system-updater				install
+pop-theme					install
+pop-transition					install
+pop-upgrade					install
+pop-wallpapers					install
+poppler-data					install
+poppler-utils					install
+popsicle					install
+popsicle-gtk					install
+powerline					install
+powermgmt-base					install
+ppp						install
+pptp-linux					install
+prerex						install
+preview-latex-style				install
+procps						install
+proj-bin					install
+proj-data					install
+ps2eps						install
+psmisc						install
+pstoedit					install
+psutils						install
+publicsuffix					install
+pulseaudio-utils				install
+purifyeps					install
+qalc						install
+qt5-gtk-platformtheme:amd64			install
+qt5-qmake:amd64					install
+qt5-qmake-bin					install
+qt5dxcb-plugin:amd64				install
+qtbase5-dev:amd64				install
+qtbase5-dev-tools				install
+qtchooser					install
+qtspeech5-speechd-plugin:amd64			install
+qttranslations5-l10n				install
+qtwayland5:amd64				install
+r-base						install
+rake						install
+readline-common					install
+referenceassemblies-pcl				install
+repoman						install
+resilio-sync					install
+resolvconf					install
+rfkill						install
+rpcsvc-proto					install
+rstudio						install
+rsync						install
+rsyslog						install
+rtkit						install
+rtmpdump					install
+ruby						install
+ruby-net-telnet					install
+ruby-rubygems					install
+ruby-webrick					install
+ruby-xmlrpc					install
+ruby3.0						install
+rubygems-integration				install
+run-one						install
+rygel						install
+samba-libs:amd64				install
+sane-airscan					install
+sane-utils					install
+sbsigntool					install
+screen-resolution-extra				install
+seahorse					install
+secureboot-db					install
+sed						install
+sensible-utils					install
+session-migration				install
+sessioninstaller				install
+sgml-base					install
+sgml-data					install
+shared-mime-info				install
+simple-scan					install
+sl						install
+slirp4netns					install
+snapd						install
+software-properties-common			install
+sonnet-plugins:amd64				install
+sound-icons					install
+sound-theme-freedesktop				install
+speech-dispatcher				install
+speech-dispatcher-audio-plugins:amd64		install
+speech-dispatcher-espeak-ng			install
+speedometer					install
+squashfs-tools					install
+ssl-cert					install
+strace						install
+switcheroo-control				install
+synaptic					install
+sysstat						install
+system-config-printer				install
+system76-acpi-dkms				install
+system76-dkms					install
+system76-io-dkms				install
+system76-power					install
+system76-scheduler				install
+systemd						install
+systemd-hwe-hwdb				install
+systemd-sysv					install
+systemd-timesyncd				install
+sysvinit-utils					install
+t1utils						install
+tar						install
+tcl						install
+tcl8.6						install
+tcpdump						install
+teckit						install
+telnet						install
+tex-common					install
+tex-gyre					install
+texinfo						install
+texlive-base					install
+thermald					install
+thin-provisioning-tools				install
+time						install
+tipa						install
+tk						install
+tk8.6						install
+tk8.6-blt2.5					install
+tlp						install
+tlp-rdw						install
+tmux						install
+tnftp						install
+toilet						install
+toilet-fonts					install
+totem						install
+totem-common					install
+totem-plugins					install
+touchegg					install
+tpm-udev					install
+tracker						install
+tracker-extract					install
+tracker-miner-fs				install
+tree						install
+ttf-mscorefonts-installer			install
+tumbler:amd64					install
+tumbler-common					install
+tzdata						install
+ubuntu-advantage-tools				install
+ubuntu-docs					install
+ubuntu-drivers-common				install
+ubuntu-keyring					install
+ubuntu-minimal					install
+ubuntu-pro-client-l10n				install
+ubuntu-release-upgrader-core			install
+ubuntu-restricted-addons			install
+ubuntu-restricted-extras			install
+ubuntu-standard					install
+ucf						install
+udev						install
+udisks2						install
+ufw						install
+unicode-data					install
+unixodbc-common					install
+uno-libs-private				install
+unrar						install
+unzip						install
+update-inetd					install
+update-manager-core				install
+upower						install
+ure						install
+usb-modeswitch					install
+usb-modeswitch-data				install
+usb.ids						install
+usbmuxd						install
+usbutils					install
+usrmerge					install
+util-linux					install
+uuid-dev:amd64					install
+uuid-runtime					install
+va-driver-all:amd64				install
+vdpau-driver-all:amd64				install
+vim-common					install
+vim-tiny					install
+vkd3d-compiler:i386				install
+vlc						install
+vnstat						install
+vprerex						install
+w3m						install
+w3m-img						install
+wamerican					install
+warspear					install
+wbrazilian					install
+wbritish					install
+wfrench						install
+wget						install
+whiptail					install
+whoopsie					install
+whoopsie-preferences				install
+wine						install
+wireless-regdb					install
+wireless-tools					install
+wireplumber					install
+witalian					install
+wmctrl						install
+wngerman					install
+wogerman					install
+wpasupplicant					install
+wportuguese					install
+wspanish					install
+wswiss						install
+x11-apps					install
+x11-common					install
+x11-session-utils				install
+x11-utils					install
+x11-xkb-utils					install
+x11-xserver-utils				install
+x11proto-dev					install
+xapp						install
+xapps-common					install
+xauth						install
+xbitmaps					install
+xbrlapi						install
+xcvt						install
+xdg-dbus-proxy					install
+xdotool						install
+xfonts-base					install
+xinit						install
+xinput						install
+xkb-data					install
+xml-core					install
+xorg						install
+xorg-docs-core					install
+xorg-sgml-doctools				install
+xterm						install
+xtrans-dev					install
+xwayland					install
+xxd						install
+xz-utils					install
+yelp						install
+youtube-dl					install
+yt-dlp						install
+zenity						install
+zip						install
+zlib1g:amd64					install
+zsh						install
+zsh-common					install
+zstd						install
+
+
