@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+
+  api:
+    build: .
+    container_name: api
+    ports:
+      - 8080:8080
+    environment:
+      APP_DATABASE_USER: ${APP_DATABASE_USER}
+      APP_DATABASE_PASSWORD: ${APP_DATABASE_PASSWORD}
+      APP_DATABASE_HOST: ${APP_DATABASE_HOST}
+      APP_DATABASE_PORT: ${APP_DATABASE_PORT}
+      APP_DATABASE_NAME: ${APP_DATABASE_NAME}
+    networks:
+      - app
+
+  postgres:
+    image: postgres:16.2-alpine3.19
+    container_name: api-db
+    ports:
+      - ${APP_DATABASE_PORT}:5432
+    environment:
+      POSTGRES_USER: ${APP_DATABASE_USER} 
+      POSTGRES_PASSWORD: ${APP_DATABASE_PASSWORD}
+      POSTGRES_DB: ${APP_DATABASE_NAME}
+    networks:
+      - App
+
+networks:
+  app:
+    driver: bridge
