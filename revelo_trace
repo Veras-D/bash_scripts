@@ -4,7 +4,56 @@ set -euo pipefail
 TRACE_DIR="$HOME/trace"
 mkdir -p "$TRACE_DIR"
 
-echo "🐧 Pop!_OS clipboard → $TRACE_DIR/trace.json → trace-zip 🚀"
+show_help() {
+  cat << EOF
+Usage: $(basename "$0") [OPTIONS]
+
+OPTIONS:
+  -g, --grep PATTERN                        Filter output by pattern
+  --no-overwrite                            Create versioned files instead of overwriting
+  --name NAME                               Use custom name for output zip file
+  --no-validate                             Skip JSON validation
+  -h, --help                                Show this help message
+
+EXAMPLES:
+  $(basename "$0")                              # Basic usage
+  $(basename "$0") --grep "error"               # Filter by pattern
+  $(basename "$0") --name bf7b4677              # Custom zip name: bf7b4677.zip
+  $(basename "$0") --name test --no-overwrite   # Custom name with versioning: test-0.zip, test-1.zip, etc.
+  $(basename "$0") --no-validate                # Skip JSON validation
+
+REQUIREMENTS:
+  - python3 (required)
+  - jq (optional, for better JSON handling)
+  - Clipboard tool: wl-paste (Wayland) or xclip/xsel (X11)
+EOF
+}
+
+validate_json() {
+  local content="$1"
+  # First try standard JSON
+  if echo "$content" | python3 -c 'import sys, json; json.loads(sys.stdin.read())' 2>/dev/null; then
+    return 0
+  fi
+
+  # If that fails, try JSONL (JSON Lines) format
+  if echo "$content" | python3 -c '
+import sys, json
+for line_num, line in enumerate(sys.stdin, 1):
+    line = line.strip()
+    if line:
+        try:
+            json.loads(line)
+        except json.JSONDecodeError:
+            exit(1)
+' 2>/dev/null; then
+    return 0
+  fi
+
+  return 1
+}
+
+echo "🐧 Pop!_OS clipboard → ~/trace/trace.json → trace-zip"
 
 # --- Detect clipboard command ---
 if command -v wl-paste >/dev/null 2>&1; then
@@ -33,6 +82,8 @@ fi
 # --- Args ---
 GREP_PATTERN=""
 NO_OVERWRITE=false
+CUSTOM_NAME=""
+NO_VALIDATE=false
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -48,38 +99,79 @@ while [[ $# -gt 0 ]]; do
       NO_OVERWRITE=true
       shift
       ;;
+    --name)
+      if [[ $# -lt 2 ]]; then
+        echo "❌ --name requires a name argument"
+        exit 1
+      fi
+      CUSTOM_NAME="$2"
+      shift 2
+      ;;
+    --no-validate)
+      NO_VALIDATE=true
+      shift
+      ;;
+    --help|-h)
+      show_help
+      exit 0
+      ;;
     *)
-      echo "⚠️ Unknown arg: $1"
-      echo "Usage: $0 [--grep|-g PATTERN] [--no-overwrite]"
+      echo "❌ Unknown argument: $1"
+      echo "Use --help for usage information"
       exit 1
       ;;
   esac
 done
+
+# --- Read and validate clipboard content ---
+if ! CLIPBOARD_CONTENT=$(eval "$CLIP_CMD"); then
+  echo "❌ Failed to read clipboard"
+  exit 1
+fi
+
+if [[ -z "$CLIPBOARD_CONTENT" ]]; then
+  echo "❌ Clipboard is empty"
+  exit 1
+fi
+
+# --- JSON validation ---
+if [[ "$NO_VALIDATE" == false ]]; then
+  echo "🔍 Validating JSON content..."
+  if ! validate_json "$CLIPBOARD_CONTENT"; then
+    echo "❌ Clipboard content is not valid JSON"
+    echo "💡 Use --no-validate to skip JSON validation"
+    exit 1
+  fi
+  echo "✅ JSON validation passed"
+fi
 
 TRACE_RAW="$TRACE_DIR/trace.raw"
 TRACE_FILE="$TRACE_DIR/trace.json"
 DATE_STR=$(date +%m-%d-%Y)
 
 # --- Determine zip filename ---
+if [[ -n "$CUSTOM_NAME" ]]; then
+  BASE_NAME="$CUSTOM_NAME"
+else
+  BASE_NAME="trace-${DATE_STR}"
+fi
+
 if [[ "$NO_OVERWRITE" == true ]]; then
   VERSION=0
-  ZIP_NAME="$TRACE_DIR/trace-${DATE_STR}-${VERSION}.zip"
+  ZIP_NAME="$TRACE_DIR/${BASE_NAME}-${VERSION}.zip"
   while [[ -f "$ZIP_NAME" ]]; do
     VERSION=$((VERSION + 1))
-    ZIP_NAME="$TRACE_DIR/trace-${DATE_STR}-${VERSION}.zip"
+    ZIP_NAME="$TRACE_DIR/${BASE_NAME}-${VERSION}.zip"
   done
 else
-  ZIP_NAME="$TRACE_DIR/trace-${DATE_STR}.zip"
+  ZIP_NAME="$TRACE_DIR/${BASE_NAME}.zip"
 fi
 
 # --- Save raw clipboard ---
-if ! eval "$CLIP_CMD" > "$TRACE_RAW"; then
-  echo "❌ Failed to read clipboard"
-  exit 1
-fi
+echo "$CLIPBOARD_CONTENT" > "$TRACE_RAW"
 
 # --- Normalize JSON via Python ---
-if ! eval "$CLIP_CMD" | python3 -c '
+if ! echo "$CLIPBOARD_CONTENT" | python3 -c '
 import sys, json
 s = sys.stdin.read()
 dec = json.JSONDecoder()
