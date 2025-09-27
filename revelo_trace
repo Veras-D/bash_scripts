@@ -1,0 +1,168 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+TRACE_DIR="$HOME/trace"
+mkdir -p "$TRACE_DIR"
+
+echo "🐧 Pop!_OS clipboard → $TRACE_DIR/trace.json → trace-zip 🚀"
+
+# --- Detect clipboard command ---
+if command -v wl-paste >/dev/null 2>&1; then
+  CLIP_CMD="wl-paste"
+elif command -v xclip >/dev/null 2>&1; then
+  CLIP_CMD="xclip -selection clipboard -o"
+elif command -v xsel >/dev/null 2>&1; then
+  CLIP_CMD="xsel -b -o"
+else
+  echo "❌ No clipboard tool found. Install one with:"
+  echo "   sudo apt install wl-clipboard   # Wayland"
+  echo "   sudo apt install xclip          # X11"
+  exit 1
+fi
+
+# --- Requirements check ---
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "❌ python3 is required. Install it first."
+  exit 1
+fi
+
+if ! command -v jq >/dev/null 2>&1; then
+  echo "⚠️ jq not found — output will fall back to grep/context."
+fi
+
+# --- Args ---
+GREP_PATTERN=""
+NO_OVERWRITE=false
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --grep|-g)
+      if [[ $# -lt 2 ]]; then
+        echo "❌ --grep requires a pattern argument"
+        exit 1
+      fi
+      GREP_PATTERN="$2"
+      shift 2
+      ;;
+    --no-overwrite)
+      NO_OVERWRITE=true
+      shift
+      ;;
+    *)
+      echo "⚠️ Unknown arg: $1"
+      echo "Usage: $0 [--grep|-g PATTERN] [--no-overwrite]"
+      exit 1
+      ;;
+  esac
+done
+
+TRACE_RAW="$TRACE_DIR/trace.raw"
+TRACE_FILE="$TRACE_DIR/trace.json"
+DATE_STR=$(date +%m-%d-%Y)
+
+# --- Determine zip filename ---
+if [[ "$NO_OVERWRITE" == true ]]; then
+  VERSION=0
+  ZIP_NAME="$TRACE_DIR/trace-${DATE_STR}-${VERSION}.zip"
+  while [[ -f "$ZIP_NAME" ]]; do
+    VERSION=$((VERSION + 1))
+    ZIP_NAME="$TRACE_DIR/trace-${DATE_STR}-${VERSION}.zip"
+  done
+else
+  ZIP_NAME="$TRACE_DIR/trace-${DATE_STR}.zip"
+fi
+
+# --- Save raw clipboard ---
+if ! eval "$CLIP_CMD" > "$TRACE_RAW"; then
+  echo "❌ Failed to read clipboard"
+  exit 1
+fi
+
+# --- Normalize JSON via Python ---
+if ! eval "$CLIP_CMD" | python3 -c '
+import sys, json
+s = sys.stdin.read()
+dec = json.JSONDecoder()
+i = 0; n = len(s); objs = []
+try:
+    parsed = json.loads(s)
+    if isinstance(parsed, list):
+        for o in parsed: print(json.dumps(o, ensure_ascii=False))
+        sys.exit(0)
+    else:
+        print(json.dumps(parsed, ensure_ascii=False)); sys.exit(0)
+except Exception:
+    pass
+while True:
+    while i < n and s[i].isspace(): i += 1
+    if i >= n: break
+    try:
+        obj, j = dec.raw_decode(s, idx=i)
+        objs.append(obj); i = j
+    except Exception:
+        next_candidates = [s.find("{", i+1), s.find("[", i+1)]
+        next_candidates = [x for x in next_candidates if x != -1]
+        if not next_candidates: break
+        i = min(next_candidates)
+        try:
+            obj, j = dec.raw_decode(s, idx=i); objs.append(obj); i = j
+        except Exception:
+            i += 1; continue
+if objs:
+    for o in objs: print(json.dumps(o, ensure_ascii=False))
+else:
+    sys.stdout.write(s)
+' > "${TRACE_FILE}.tmp" 2>/dev/null; then
+  echo "⚠️ Python processing failed, using raw clipboard data"
+  cp "$TRACE_RAW" "${TRACE_FILE}.tmp"
+fi
+
+# finalize json file
+if [[ -s "${TRACE_FILE}.tmp" ]]; then
+  mv "${TRACE_FILE}.tmp" "$TRACE_FILE"
+else
+  echo "⚠️ Normalized file is empty, using raw clipboard data"
+  cp "$TRACE_RAW" "$TRACE_FILE"
+fi
+
+# --- Check if trace file exists ---
+if [[ ! -f "$TRACE_FILE" ]]; then
+  echo "❌ Failed to create trace file"
+  exit 1
+fi
+
+# --- Zip the normalized trace ---
+if ! zip -j -q -o "$ZIP_NAME" "$TRACE_FILE"; then
+  echo "❌ Failed to create zip file"
+  exit 1
+fi
+
+if [[ "$NO_OVERWRITE" == true ]]; then
+  echo "📦 Created new zip: $ZIP_NAME"
+else
+  echo "📦 Created/overwritten zip: $ZIP_NAME"
+fi
+
+# --- Display results ---
+echo "📄 Contents of $TRACE_FILE:"
+
+if [[ -n "$GREP_PATTERN" ]]; then
+  if command -v jq >/dev/null 2>&1; then
+    echo "🔍 Showing full JSON objects matching '$GREP_PATTERN':"
+    if ! jq -C --arg pat "$GREP_PATTERN" 'select(tostring | test($pat; "i"))' "$TRACE_FILE"; then
+      echo "⚠️ No matches found. Falling back to grep:"
+      grep -i --color=always -n -A 3 -B 3 "$GREP_PATTERN" "$TRACE_RAW" || echo "⚠️ No matches found in raw trace"
+    fi
+  else
+    echo "🔍 jq not installed — using grep:"
+    grep -i --color=always -n -A 3 -B 3 "$GREP_PATTERN" "$TRACE_RAW" || echo "⚠️ No matches found"
+  fi
+else
+  if command -v jq >/dev/null 2>&1; then
+    jq -C '.' "$TRACE_FILE" || cat "$TRACE_FILE"
+  else
+    cat "$TRACE_FILE"
+  fi
+fi
+
+echo "🎉 Done."

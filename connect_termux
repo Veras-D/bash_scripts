@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# ⚔️ Pegando o IP do DNS
+IP=$(nmcli device show | grep -oP 'IP4\.DNS\[\d+\]:\s*\K[0-9.]+' | awk "NR==${1:-1}")
+USER="u0_a79"
+PORT=8022
+
+if [[ -z "$IP" ]]; then
+    echo "❌ Não consegui extrair o IP do DNS"
+    exit 1
+else
+    echo "🎯 IP do DNS encontrado: http://$IP:3000"
+    echo "🚀 Conectando com: ssh $USER@$IP -p $PORT"
+    sshpass -p "vivi" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "$USER@$IP" -p "$PORT"
+fi

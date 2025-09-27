@@ -91,8 +91,6 @@ flatpak install flathub com.obsproject.Studio -y
 
 ## Instalando pacotes Snap ##
 sudo snap install spotify
-sudo snap install slack --classic
-sudo snap install skype --classic
 sudo snap install photogimp
 # ---------------------------------------------------------------------- #
 
