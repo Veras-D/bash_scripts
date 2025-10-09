@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+# Caminho absoluto até a pasta com os templates
+BASE_DIR="/home/veras/Veras/scripts/revelo/Mini-repos/base"
+
+# Caminho absoluto onde os novos projetos devem ser criados
+WORK_DIR="/home/veras/Veras/scripts/revelo/Mini-repos"
+
+# Argumentos
+NEW_PROJECT_NAME="$1"
+LANGUAGE="$2"
+
+# Diretório alvo do projeto (fora da pasta bases)
+TARGET_DIR="$WORK_DIR/$NEW_PROJECT_NAME"
+
+# Verificação de argumentos
+if [ -z "$NEW_PROJECT_NAME" ] || [ -z "$LANGUAGE" ]; then
+  echo "❌ Uso: $0 <nome-do-projeto> <linguagem>"
+  echo "Exemplo: $0 meu-projeto python"
+  exit 1
+fi
+
+# Verifica se a linguagem existe
+if [ ! -d "$BASE_DIR/$LANGUAGE" ]; then
+  echo "❌ Linguagem '$LANGUAGE' não encontrada em $BASE_DIR"
+  exit 1
+fi
+
+# Verifica se a pasta já existe
+if [ -d "$TARGET_DIR" ]; then
+  echo "⚠️ A pasta '$TARGET_DIR' já existe!"
+  exit 1
+fi
+
+# Cria a pasta e copia o template
+mkdir -p "$TARGET_DIR"
+cp -r "$BASE_DIR/$LANGUAGE/"* "$TARGET_DIR"
+
+# Confirmação
+echo "✅ Projeto '$NEW_PROJECT_NAME' criado em:"
+echo "   $TARGET_DIR"

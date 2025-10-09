@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Uso: package_version_per_date <package> [<date>]
+
+PACKAGE=$1
+TARGET_DATE=${2:-$(git log -1 --format=%cd --date=short)}
+
+echo "Package: $PACKAGE"
+echo "Target date: $TARGET_DATE"
+
+# Baixa metadados do PyPI
+JSON=$(curl -s https://pypi.org/pypi/$PACKAGE/json)
+
+# Lista versões com data de upload
+echo "$JSON" | jq -r \
+  --arg DATE "$TARGET_DATE" '
+  .releases
+  | to_entries[]
+  | {version: .key, uploads: [.value[].upload_time_iso_8601]}
+  | select(.uploads != [])
+  | . as $rel
+  | $rel.uploads[]
+  | {version: $rel.version, date: .}
+  ' \
+| jq -s --arg DATE "$TARGET_DATE" '
+  map(select(.date <= ($DATE + "T23:59:59Z")))
+  | sort_by(.date)
+  | last
+  | .version + " (" + .date + ")"
+'
