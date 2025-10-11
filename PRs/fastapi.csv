@@ -1,0 +1,7 @@
+repo,stars,repo_size_mb,issue_number,issue_title,issue_url,pr_number,pr_url,merged_at,additions,deletions,changed_files,is_merged
+fastapi/fastapi,90588,27.81,4871,✨Add support for PEP-593 `Annotated` for specifying dependencies and parameters,https://github.com/fastapi/fastapi/pull/4871,4871,https://github.com/fastapi/fastapi/pull/4871,2023-03-17T20:35:46Z,1293,156,24,2023-03-17T20:35:46Z
+fastapi/fastapi,90588,27.81,2944,✨ Add support for `lifespan` async context managers (superseding `startup` and `shutdown` events),https://github.com/fastapi/fastapi/pull/2944,2944,https://github.com/fastapi/fastapi/pull/2944,2023-03-07T15:46:00Z,298,44,6,2023-03-07T15:46:00Z
+fastapi/fastapi,90588,27.81,3372,✨ Add support for Trio via AnyIO,https://github.com/fastapi/fastapi/pull/3372,3372,https://github.com/fastapi/fastapi/pull/3372,2021-10-06T15:32:11Z,49,167,15,2021-10-06T15:32:11Z
+fastapi/fastapi,90588,27.81,454,added support and tests for pydantic dataclasses,https://github.com/fastapi/fastapi/pull/454,454,https://github.com/fastapi/fastapi/pull/454,2019-08-30T23:12:16Z,192,21,5,2019-08-30T23:12:16Z
+fastapi/fastapi,90588,27.81,347,Fix same function names in different modules with composite bodies,https://github.com/fastapi/fastapi/pull/347,347,https://github.com/fastapi/fastapi/pull/347,2019-06-28T17:35:17Z,270,64,25,2019-06-28T17:35:17Z
+fastapi/fastapi,90588,27.81,278,Refactor param extraction using Pydantic Field,https://github.com/fastapi/fastapi/pull/278,278,https://github.com/fastapi/fastapi/pull/278,2019-05-30T13:40:44Z,623,126,14,2019-05-30T13:40:44Z

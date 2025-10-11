@@ -1,0 +1,4 @@
+repo,stars,repo_size_mb,issue_number,issue_title,issue_url,pr_number,pr_url,merged_at,additions,deletions,changed_files,is_merged
+wireservice/csvkit,6259,21.87,1236,feat: make man pages be included in wheels too!,https://github.com/wireservice/csvkit/pull/1236,1236,https://github.com/wireservice/csvkit/pull/1236,2024-07-12T22:20:01Z,2488,29,20,2024-07-12T22:20:01Z
+wireservice/csvkit,6259,21.87,1241,"csvclean: Use standard output and standard error, and use exit code 1 if errors #781 #195",https://github.com/wireservice/csvkit/pull/1241,1241,https://github.com/wireservice/csvkit/pull/1241,2024-04-27T22:21:46Z,103,145,6,2024-04-27T22:21:46Z
+wireservice/csvkit,6259,21.87,697,Remove bespoke table implementation entirely,https://github.com/wireservice/csvkit/pull/697,697,https://github.com/wireservice/csvkit/pull/697,2016-12-25T02:26:08Z,239,796,19,2016-12-25T02:26:08Z

@@ -1,0 +1,5 @@
+repo,stars,repo_size_mb,issue_number,issue_title,issue_url,pr_number,pr_url,merged_at,additions,deletions,changed_files,is_merged
+facelessuser/soupsieve,248,5.46,279,Fix some typing issues revealed with latest BS4,https://github.com/facelessuser/soupsieve/pull/279,279,https://github.com/facelessuser/soupsieve/pull/279,2025-02-19T03:32:56Z,239,170,5,2025-02-19T03:32:56Z
+facelessuser/soupsieve,248,5.46,226,"Allow `:is()`, `:has()`, and `:where()` to forgive empty slots",https://github.com/facelessuser/soupsieve/pull/226,226,https://github.com/facelessuser/soupsieve/pull/226,2021-09-10T16:57:49Z,194,62,10,2021-09-10T16:57:49Z
+facelessuser/soupsieve,248,5.46,84,quirks mode,https://github.com/facelessuser/soupsieve/pull/84,84,https://github.com/facelessuser/soupsieve/pull/84,2019-01-14T00:29:58Z,357,80,13,2019-01-14T00:29:58Z
+facelessuser/soupsieve,248,5.46,22,1.1.0dev0,https://github.com/facelessuser/soupsieve/pull/22,22,https://github.com/facelessuser/soupsieve/pull/22,2018-12-18T07:45:43Z,1913,262,17,2018-12-18T07:45:43Z

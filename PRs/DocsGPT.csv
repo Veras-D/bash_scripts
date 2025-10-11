@@ -1,0 +1,21 @@
+repo,stars,repo_size_mb,issue_number,issue_title,issue_url,pr_number,pr_url,merged_at,additions,deletions,changed_files,is_merged
+arc53/DocsGPT,17175,85.79,1982,Add MongoDB-backed NotesTool with CRUD actions and unit tests,https://github.com/arc53/DocsGPT/pull/1982,1982,https://github.com/arc53/DocsGPT/pull/1982,2025-10-06T16:24:03Z,323,2,5,2025-10-06T16:24:03Z
+arc53/DocsGPT,17175,85.79,1995,fix: agent sources and other issues,https://github.com/arc53/DocsGPT/pull/1995,1995,https://github.com/arc53/DocsGPT/pull/1995,2025-10-01T09:19:48Z,367,175,5,2025-10-01T09:19:48Z
+arc53/DocsGPT,17175,85.79,1118,1059 migrating database to new model,https://github.com/arc53/DocsGPT/pull/1118,1118,https://github.com/arc53/DocsGPT/pull/1118,2024-09-09T23:17:59Z,374,440,28,2024-09-09T23:17:59Z
+arc53/DocsGPT,17175,85.79,1930,Added support for Multi select sources,https://github.com/arc53/DocsGPT/pull/1930,1930,https://github.com/arc53/DocsGPT/pull/1930,2025-09-10T16:48:02Z,1168,520,24,2025-09-10T16:48:02Z
+arc53/DocsGPT,17175,85.79,1824,feat: reorganize LLM handler structure with better abstraction,https://github.com/arc53/DocsGPT/pull/1824,1824,https://github.com/arc53/DocsGPT/pull/1824,2025-06-11T16:19:50Z,899,635,33,2025-06-11T16:19:50Z
+arc53/DocsGPT,17175,85.79,1812,Tools redesign,https://github.com/arc53/DocsGPT/pull/1812,1812,https://github.com/arc53/DocsGPT/pull/1812,2025-05-23T22:49:45Z,486,184,12,2025-05-23T22:49:45Z
+arc53/DocsGPT,17175,85.79,1789,Frontend Fixes,https://github.com/arc53/DocsGPT/pull/1789,1789,https://github.com/arc53/DocsGPT/pull/1789,2025-05-20T22:05:47Z,314,246,22,2025-05-20T22:05:47Z
+arc53/DocsGPT,17175,85.79,1733,"Attachments: Enhancements , strategy specific to certain LLMs",https://github.com/arc53/DocsGPT/pull/1733,1733,https://github.com/arc53/DocsGPT/pull/1733,2025-04-14T22:55:46Z,653,199,16,2025-04-14T22:55:46Z
+arc53/DocsGPT,17175,85.79,1637,Feat/sources in widget,https://github.com/arc53/DocsGPT/pull/1637,1637,https://github.com/arc53/DocsGPT/pull/1637,2025-02-17T21:55:02Z,126,663,6,2025-02-17T21:55:02Z
+arc53/DocsGPT,17175,85.79,1444,Fixed edit and resend issue,https://github.com/arc53/DocsGPT/pull/1444,1444,https://github.com/arc53/DocsGPT/pull/1444,2024-11-25T11:12:57Z,263,148,7,2024-11-25T11:12:57Z
+arc53/DocsGPT,17175,85.79,1434,feat: wrapper modal,https://github.com/arc53/DocsGPT/pull/1434,1434,https://github.com/arc53/DocsGPT/pull/1434,2024-11-20T10:48:30Z,286,238,8,2024-11-20T10:48:30Z
+arc53/DocsGPT,17175,85.79,1188,Reusable  Attractive  Skeleton  Loader Component is  added  [Fixes #1181],https://github.com/arc53/DocsGPT/pull/1188,1188,https://github.com/arc53/DocsGPT/pull/1188,2024-10-15T23:29:09Z,437,226,11,2024-10-15T23:29:09Z
+arc53/DocsGPT,17175,85.79,1274,fix upload,https://github.com/arc53/DocsGPT/pull/1274,1274,https://github.com/arc53/DocsGPT/pull/1274,2024-10-10T09:42:14Z,207,101,8,2024-10-10T09:42:14Z
+arc53/DocsGPT,17175,85.79,988,Fix/retry-btn ,https://github.com/arc53/DocsGPT/pull/988,988,https://github.com/arc53/DocsGPT/pull/988,2024-06-15T10:36:47Z,231,150,8,2024-06-15T10:36:47Z
+arc53/DocsGPT,17175,85.79,974,fix/pr-960,https://github.com/arc53/DocsGPT/pull/974,974,https://github.com/arc53/DocsGPT/pull/974,2024-06-03T21:44:36Z,2316,4302,6,2024-06-03T21:44:36Z
+arc53/DocsGPT,17175,85.79,867,fix: issue #157,https://github.com/arc53/DocsGPT/pull/867,867,https://github.com/arc53/DocsGPT/pull/867,2024-03-08T16:06:51Z,411,372,5,2024-03-08T16:06:51Z
+arc53/DocsGPT,17175,85.79,861,DocsGPT Widget,https://github.com/arc53/DocsGPT/pull/861,861,https://github.com/arc53/DocsGPT/pull/861,2024-03-06T17:38:47Z,22218,8339,39,2024-03-06T17:38:47Z
+arc53/DocsGPT,17175,85.79,354,working es,https://github.com/arc53/DocsGPT/pull/354,354,https://github.com/arc53/DocsGPT/pull/354,2023-09-30T14:37:38Z,362,73,12,2023-09-30T14:37:38Z
+arc53/DocsGPT,17175,85.79,513,Mock backend server,https://github.com/arc53/DocsGPT/pull/513,513,https://github.com/arc53/DocsGPT/pull/513,2023-11-22T12:27:11Z,1663,0,7,2023-11-22T12:27:11Z
+arc53/DocsGPT,17175,85.79,556,Parser for OpenAPI3(Swagger),https://github.com/arc53/DocsGPT/pull/556,556,https://github.com/arc53/DocsGPT/pull/556,2023-10-25T20:27:45Z,270,0,6,2023-10-25T20:27:45Z

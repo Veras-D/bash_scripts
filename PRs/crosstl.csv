@@ -1,0 +1,3 @@
+repo,stars,repo_size_mb,issue_number,issue_title,issue_url,pr_number,pr_url,merged_at,additions,deletions,changed_files,is_merged
+CrossGL/crosstl,69,1.05,260,Feature bitwise not support,https://github.com/CrossGL/crosstl/pull/260,260,https://github.com/CrossGL/crosstl/pull/260,2025-01-24T07:54:42Z,237,18,26,2025-01-24T07:54:42Z
+CrossGL/crosstl,69,1.05,104,Add else if to translator #32,https://github.com/CrossGL/crosstl/pull/104,104,https://github.com/CrossGL/crosstl/pull/104,2024-09-05T06:41:12Z,290,8,10,2024-09-05T06:41:12Z

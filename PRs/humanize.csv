@@ -1,0 +1,11 @@
+repo,stars,repo_size_mb,issue_number,issue_title,issue_url,pr_number,pr_url,merged_at,additions,deletions,changed_files,is_merged
+jmoiron/humanize,1691,0.55,207,Add gender support for ordinals,https://github.com/jmoiron/humanize/pull/207,207,https://github.com/jmoiron/humanize/pull/207,2021-05-29T09:09:04Z,1887,856,22,2021-05-29T09:09:04Z
+jmoiron/humanize,1691,0.55,202,Add pluralization for intword,https://github.com/jmoiron/humanize/pull/202,202,https://github.com/jmoiron/humanize/pull/202,2021-05-01T13:50:16Z,1470,916,24,2021-05-01T13:50:16Z
+jmoiron/humanize,1691,0.55,163,Internationalise a previously hardcoded 'and',https://github.com/jmoiron/humanize/pull/163,163,https://github.com/jmoiron/humanize/pull/163,2020-09-30T16:48:12Z,1286,1044,30,2020-09-30T16:48:12Z
+jmoiron/humanize,1691,0.55,104,Add micro- and millisecond units to naturaldelta and naturaltime,https://github.com/jmoiron/humanize/pull/104,104,https://github.com/jmoiron/humanize/pull/104,2020-02-13T15:08:02Z,221,29,6,2020-02-13T15:08:02Z
+jmoiron/humanize,1691,0.55,102,Drop support for EOL Python 2,https://github.com/jmoiron/humanize/pull/102,102,https://github.com/jmoiron/humanize/pull/102,2020-02-11T14:39:54Z,172,178,17,2020-02-11T14:39:54Z
+jmoiron/humanize,1691,0.55,207,Add gender support for ordinals,https://github.com/jmoiron/humanize/pull/207,207,https://github.com/jmoiron/humanize/pull/207,2021-05-29T09:09:04Z,1887,856,22,2021-05-29T09:09:04Z
+jmoiron/humanize,1691,0.55,202,Add pluralization for intword,https://github.com/jmoiron/humanize/pull/202,202,https://github.com/jmoiron/humanize/pull/202,2021-05-01T13:50:16Z,1470,916,24,2021-05-01T13:50:16Z
+jmoiron/humanize,1691,0.55,163,Internationalise a previously hardcoded 'and',https://github.com/jmoiron/humanize/pull/163,163,https://github.com/jmoiron/humanize/pull/163,2020-09-30T16:48:12Z,1286,1044,30,2020-09-30T16:48:12Z
+jmoiron/humanize,1691,0.55,104,Add micro- and millisecond units to naturaldelta and naturaltime,https://github.com/jmoiron/humanize/pull/104,104,https://github.com/jmoiron/humanize/pull/104,2020-02-13T15:08:02Z,221,29,6,2020-02-13T15:08:02Z
+jmoiron/humanize,1691,0.55,102,Drop support for EOL Python 2,https://github.com/jmoiron/humanize/pull/102,102,https://github.com/jmoiron/humanize/pull/102,2020-02-11T14:39:54Z,172,178,17,2020-02-11T14:39:54Z

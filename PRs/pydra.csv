@@ -1,0 +1,10 @@
+repo,stars,repo_size_mb,issue_number,issue_title,issue_url,pr_number,pr_url,merged_at,additions,deletions,changed_files,is_merged
+nipype/pydra,129,26.73,742,Handle None types,https://github.com/nipype/pydra/pull/742,742,https://github.com/nipype/pydra/pull/742,2024-04-26T15:22:35Z,255,13,5,2024-04-26T15:22:35Z
+nipype/pydra,129,26.73,645,STY: Miscellaneous cleanups,https://github.com/nipype/pydra/pull/645,645,https://github.com/nipype/pydra/pull/645,2023-05-03T20:43:02Z,191,204,30,2023-05-03T20:43:02Z
+nipype/pydra,129,26.73,231,Adding BoshTask,https://github.com/nipype/pydra/pull/231,231,https://github.com/nipype/pydra/pull/231,2020-05-04T02:13:30Z,447,32,9,2020-05-04T02:13:30Z
+nipype/pydra,129,26.73,493,Ci/ci and pre-commit updates,https://github.com/nipype/pydra/pull/493,493,https://github.com/nipype/pydra/pull/493,2021-09-03T18:37:20Z,172,88,29,2021-09-03T18:37:20Z
+nipype/pydra,129,26.73,130,changes in checksums/results and some fixes (fixes#107),https://github.com/nipype/pydra/pull/130,130,https://github.com/nipype/pydra/pull/130,2019-08-18T05:27:38Z,169,37,5,2019-08-18T05:27:38Z
+nipype/pydra,129,26.73,51,ENH: asynchronous execution,https://github.com/nipype/pydra/pull/51,51,https://github.com/nipype/pydra/pull/51,2019-07-09T18:52:03Z,1074,518,15,2019-07-09T18:52:03Z
+nipype/pydra,129,26.73,369,WIP: add tmpdir to tests so pytest can run on clusters,https://github.com/nipype/pydra/pull/369,369,https://github.com/nipype/pydra/pull/369,2020-11-11T02:48:11Z,498,228,6,2020-11-11T02:48:11Z
+nipype/pydra,129,26.73,242,enh: add support for dask,https://github.com/nipype/pydra/pull/242,242,https://github.com/nipype/pydra/pull/242,2020-05-05T03:39:23Z,197,384,15,2020-05-05T03:39:23Z
+nipype/pydra,129,26.73,81,MAINT: Move to setup.cfg + pyproject.toml,https://github.com/nipype/pydra/pull/81,81,https://github.com/nipype/pydra/pull/81,2019-07-17T16:13:06Z,159,177,8,2019-07-17T16:13:06Z

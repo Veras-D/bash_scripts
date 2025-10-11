@@ -1,0 +1,7 @@
+repo,stars,repo_size_mb,issue_number,issue_title,issue_url,pr_number,pr_url,merged_at,additions,deletions,changed_files,is_merged
+shinichi-takii/ddlparse,87,0.09,55,Enhancement parse of Redshift DDL,https://github.com/shinichi-takii/ddlparse/pull/55,55,https://github.com/shinichi-takii/ddlparse/pull/55,2020-08-13T13:12:07Z,241,111,6,2020-08-13T13:12:07Z
+shinichi-takii/ddlparse,87,0.09,51,Add supports MySQL data-type,https://github.com/shinichi-takii/ddlparse/pull/51,51,https://github.com/shinichi-takii/ddlparse/pull/51,2020-07-18T13:14:59Z,567,252,7,2020-07-18T13:14:59Z
+shinichi-takii/ddlparse,87,0.09,39,Add supports the parse of COMMENT statements,https://github.com/shinichi-takii/ddlparse/pull/39,39,https://github.com/shinichi-takii/ddlparse/pull/39,2019-06-14T22:07:01Z,263,292,9,2019-06-14T22:07:01Z
+shinichi-takii/ddlparse,87,0.09,27,add supports PostgreSQL data type and Python 3.7,https://github.com/shinichi-takii/ddlparse/pull/27,27,https://github.com/shinichi-takii/ddlparse/pull/27,2019-01-27T08:03:29Z,277,85,9,2019-01-27T08:03:29Z
+shinichi-takii/ddlparse,87,0.09,23,add bq-ddl generate func,https://github.com/shinichi-takii/ddlparse/pull/23,23,https://github.com/shinichi-takii/ddlparse/pull/23,2019-01-02T11:39:10Z,422,80,7,2019-01-02T11:39:10Z
+shinichi-takii/ddlparse,87,0.09,8,add option / fix BigQuery convert,https://github.com/shinichi-takii/ddlparse/pull/8,8,https://github.com/shinichi-takii/ddlparse/pull/8,2018-02-12T10:49:29Z,267,78,9,2018-02-12T10:49:29Z

@@ -1,0 +1,4 @@
+repo,stars,repo_size_mb,issue_number,issue_title,issue_url,pr_number,pr_url,merged_at,additions,deletions,changed_files,is_merged
+intake/intake,1055,14.94,748,Gui monolith,https://github.com/intake/intake/pull/748,748,https://github.com/intake/intake/pull/748,2023-06-06T15:01:27Z,183,2435,32,2023-06-06T15:01:27Z
+intake/intake,1055,14.94,491,Zarr catalogs,https://github.com/intake/intake/pull/491,491,https://github.com/intake/intake/pull/491,2020-05-06T13:12:37Z,263,13,9,2020-05-06T13:12:37Z
+intake/intake,1055,14.94,323,Add cat methods,https://github.com/intake/intake/pull/323,323,https://github.com/intake/intake/pull/323,2019-04-17T21:17:03Z,234,43,5,2019-04-17T21:17:03Z
