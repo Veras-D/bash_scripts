@@ -61,7 +61,7 @@ FIELDNAMES = [
     "repo", "stars", "repo_size_mb",
     "issue_number", "issue_title", "issue_url",
     "pr_number", "pr_url", "merged_at",
-    "additions", "deletions", "changed_files","is_merged"
+    "additions", "deletions", "changed_files", "head_sha"
 ]
 
 # ----------------------------- HTTP helpers ---------------------------------
@@ -290,6 +290,52 @@ def append_csv_rows(path: Path, fieldnames: List[str], rows: List[Dict], start: 
 
 # ----------------------------- Collector -------------------------------------
 
+def find_issue_number_in_body(body: str) -> Optional[int]:
+    """Finds the issue number in the PR body."""
+    if not body:
+        return None
+
+    # High score
+    match = re.search(r"(?:closes|fixes|resolves|resolve)[\s\w\.-]*#(\d+)", body, re.IGNORECASE)
+    if match:
+        return int(match.group(1))
+
+    # Medium score
+    match = re.search(r"issue[\s\w\.-]*#(\d+)", body, re.IGNORECASE)
+    if match:
+        return int(match.group(1))
+
+    # Low score
+    match = re.search(r"#(\d+)", body)
+    if match:
+        # Avoid matching commit SHAs or other long numbers
+        if len(match.group(1)) < 7:
+            return int(match.group(1))
+
+    return None
+
+def find_issue_number_from_timeline(owner: str, name: str, pr_number: int, verbose: bool = False, no_cache: bool = False, cache_ttl: int = 24 * 3600) -> Optional[int]:
+    """Finds the issue number from the PR timeline."""
+    per_page = 100
+    page = 1
+    while True:
+        url = f"{GITHUB_API}/repos/{owner}/{name}/issues/{pr_number}/timeline"
+        resp = gh_get(url, params={"per_page": per_page, "page": page}, verbose=verbose, no_cache=no_cache, cache_ttl=cache_ttl)
+        if not resp:
+            break
+        events = resp.json() or []
+        if not events:
+            break
+        for ev in events:
+            if ev.get("event") == "cross-referenced":
+                source = ev.get("source", {})
+                if source.get("type") == "issue":
+                    return source.get("issue", {}).get("number")
+        if len(events) < per_page:
+            break
+        page += 1
+    return None
+
 def process_repo(repo: Dict, min_files: int, max_files: int, min_lines: int, max_lines: int, max_repo_mb: float, verify_clone_size: bool, max_issues: int, verbose: bool = False, no_cache: bool = False, cache_ttl: int = 24 * 3600, max_age: int = 30) -> List[Dict]:
     rows = []
     owner = repo["owner"]["login"]
@@ -317,11 +363,14 @@ def process_repo(repo: Dict, min_files: int, max_files: int, min_lines: int, max
             if pr_details is None:
                 continue
 
-            # The search result is an issue object with a pull_request field.
-            # The issue details are in the main object.
-            issue_number = pr.get("number")
+            issue_number = find_issue_number_in_body(pr_details.get("body"))
+            if issue_number is None:
+                issue_number = find_issue_number_from_timeline(owner, name, pr_number, verbose=verbose, no_cache=no_cache, cache_ttl=cache_ttl)
+            if issue_number is None:
+                issue_number = pr.get("number")
+
+            issue_url = f"https://github.com/{owner}/{name}/issues/{issue_number}"
             issue_title = pr.get("title")
-            issue_url = pr.get("html_url")
 
             pr_title = pr_details.get("title", "") or ""
             if TITLE_EXCLUDE_RE.search(pr_title):
@@ -364,7 +413,7 @@ def process_repo(repo: Dict, min_files: int, max_files: int, min_lines: int, max
                 "additions": additions,
                 "deletions": deletions,
                 "changed_files": changed_files,
-                "is_merged": is_merged
+                "head_sha": pr_details.get("head", {}).get("sha")
             })
         except Exception as e:
             if verbose:
