@@ -61,7 +61,7 @@ FIELDNAMES = [
     "repo", "stars", "repo_size_mb",
     "issue_number", "issue_title", "issue_url",
     "pr_number", "pr_url", "merged_at",
-    "additions", "deletions", "changed_files", "head_sha"
+    "additions", "deletions", "changed_files", "base_sha", "clone_command"
 ]
 
 # ----------------------------- HTTP helpers ---------------------------------
@@ -400,6 +400,9 @@ def process_repo(repo: Dict, min_files: int, max_files: int, min_lines: int, max
 
             is_merged = pr_details.get("merged_at")
 
+            base_sha = pr_details.get("base", {}).get("sha")
+            clone_command = f"git clone https://github.com/{owner}/{name}.git && cd {name} && git checkout {base_sha}"
+
             rows.append({
                 "repo": f"{owner}/{name}",
                 "stars": stars,
@@ -413,7 +416,8 @@ def process_repo(repo: Dict, min_files: int, max_files: int, min_lines: int, max
                 "additions": additions,
                 "deletions": deletions,
                 "changed_files": changed_files,
-                "head_sha": pr_details.get("head", {}).get("sha")
+                "base_sha": base_sha,
+                "clone_command": clone_command
             })
         except Exception as e:
             if verbose:
