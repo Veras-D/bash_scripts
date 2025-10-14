@@ -1,13 +1,3 @@
 #!/usr/bin/env bash
-# -----------------------------------------------------------
-# Script   :
-# Descrição:
-# Versão   : 0.1
-# Autor    : Veras-D <dveras2310@gmail.com>
-# Data     : 2025-10-11
-Licança    : GNU/GPL v3.0
--------------------------------------------------------------
-# Uso      :
-# -----------------------------------------------------------
 
 git commit --author="PR Writer <prwriter@reveloexperts.com>" -m "$1" && git rev-parse HEAD

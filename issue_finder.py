@@ -61,7 +61,7 @@ FIELDNAMES = [
     "repo", "stars", "repo_size_mb",
     "issue_number", "issue_title", "issue_url",
     "pr_number", "pr_url", "merged_at",
-    "additions", "deletions", "changed_files", "base_sha", "clone_command"
+    "additions", "deletions", "changed_files", "base_sha", "clone_command", "diff_link"
 ]
 
 # ----------------------------- HTTP helpers ---------------------------------
@@ -401,7 +401,7 @@ def process_repo(repo: Dict, min_files: int, max_files: int, min_lines: int, max
             is_merged = pr_details.get("merged_at")
 
             base_sha = pr_details.get("base", {}).get("sha")
-            clone_command = f"git clone https://github.com/{owner}/{name}.git && cd {name} && git checkout {base_sha}"
+            clone_command = f"git clone https://github.com/{owner}/{name}.git && cd {name} && git checkout {base_sha} && rm -rf .git && git init && gaa && revelo_commit 'Raw repository' && gemini"
 
             rows.append({
                 "repo": f"{owner}/{name}",
@@ -417,7 +417,8 @@ def process_repo(repo: Dict, min_files: int, max_files: int, min_lines: int, max
                 "deletions": deletions,
                 "changed_files": changed_files,
                 "base_sha": base_sha,
-                "clone_command": clone_command
+                "clone_command": clone_command,
+                "diff_link": f"https://patch-diff.githubusercontent.com/raw/{owner}/{name}/pull/{pr_number}.diff"
             })
         except Exception as e:
             if verbose:

@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Check if the correct number of arguments are provided
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <file_path> <line_number>"
+    exit 1
+fi
+
+FILE_PATH=$1
+LINE_NUMBER=$2
+
+# Check if the file exists
+if [ ! -f "$FILE_PATH" ]; then
+    echo "Error: File not found at '$FILE_PATH'"
+    exit 1
+fi
+
+# Process the CSV line using Python
+python3 -c "
+import sys
+import csv
+
+file_path = sys.argv[1]
+line_number = int(sys.argv[2])
+
+with open(file_path, 'r') as f:
+    reader = csv.reader(f)
+    header = next(reader)
+    
+    # Go to the desired line
+    for i in range(line_number - 2):
+        next(reader)
+    
+    data = next(reader)
+
+    for h, d in zip(header, data):
+        print(f'{h}: {d}')
+
+" "$FILE_PATH" "$LINE_NUMBER"
