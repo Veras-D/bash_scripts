@@ -1,0 +1,61 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "Usage: $(basename "$0") <issue_title>"
+    exit 1
+fi
+
+title="$1"
+
+# Read from clipboard
+if command -v xclip &> /dev/null; then
+    clipboard_content=$(xclip -o -selection clipboard)
+elif command -v xsel &> /dev/null; then
+    clipboard_content=$(xsel -b)
+else
+    echo "Error: xclip or xsel not found. Cannot read from clipboard."
+    exit 1
+fi
+
+if [ -z "$clipboard_content" ]; then
+    echo "Clipboard is empty."
+    exit 1
+fi
+
+# Extract owner, repo and sha from clipboard content
+repo_url=$(echo "$clipboard_content" | grep -o 'https://github.com/[^"`]*' | head -n 1)
+owner=$(echo "$repo_url" | cut -d'/' -f4)
+repo=$(echo "$repo_url" | cut -d'/' -f5)
+sha=$(echo "$clipboard_content" | awk -F'"' '{print $6}')
+
+
+if [ -z "$owner" ] || [ -z "$repo" ]; then
+    echo "Could not extract repository information from clipboard."
+    exit 1
+fi
+
+echo "Extracted information:"
+echo "  Owner: $owner"
+echo "  Repo: $repo"
+echo "  SHA: $sha"
+echo ""
+
+echo "Searching for issue with title \"$title\" in repository $owner/$repo..."
+echo ""
+
+# Use GitHub search API
+search_url="https://api.github.com/search/issues?q=repo:$owner/$repo+is:issue+in:title+$title"
+
+response=$(curl -s -H "Accept: application/vnd.github.v3+json" "$search_url")
+
+total_count=$(echo "$response" | jq '.total_count')
+
+if [ "$total_count" -eq 0 ]; then
+    echo "No issues found with that title."
+    exit 0
+fi
+
+echo "Found $total_count issue(s):"
+echo ""
+
+echo "$response" | jq -r '.items[] | "Issue #\(.number): \(.title)\nURL: \(.html_url)\nState: \(.state)\nCreated at: \(.created_at)\n--"'

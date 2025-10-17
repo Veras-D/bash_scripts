@@ -1,0 +1,5 @@
+#!/bin/bash
+xclip -o > "$1"
+head -n 1 $1
+echo "[ ... ]"
+tail -n 10 $1
