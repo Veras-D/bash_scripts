@@ -401,7 +401,7 @@ def process_repo(repo: Dict, min_files: int, max_files: int, min_lines: int, max
             is_merged = pr_details.get("merged_at")
 
             base_sha = pr_details.get("base", {}).get("sha")
-            clone_command = f"git clone https://github.com/{owner}/{name}.git && cd {name} && git checkout {base_sha} && rm -rf .git && git init && gaa && revelo_commit 'Raw repository' && gemini"
+            clone_command = f"git clone https://github.com/{owner}/{name}.git && cd {name} && git checkout {base_sha} && rm -rf .git && git init && gaa && revelo_commit 'Raw repository' && cd .. && gemini"
 
             rows.append({
                 "repo": f"{owner}/{name}",
