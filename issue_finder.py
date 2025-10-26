@@ -61,7 +61,7 @@ FIELDNAMES = [
     "repo", "stars", "repo_size_mb",
     "issue_number", "issue_title", "issue_url",
     "pr_number", "pr_url", "merged_at",
-    "additions", "deletions", "changed_files", "base_sha", "clone_command", "diff_link"
+    "additions", "deletions", "changed_files", "base_sha", "clone_command", "diff_link", "related_issues_in_pr"
 ]
 
 # ----------------------------- HTTP helpers ---------------------------------
@@ -403,6 +403,15 @@ def process_repo(repo: Dict, min_files: int, max_files: int, min_lines: int, max
             base_sha = pr_details.get("base", {}).get("sha")
             clone_command = f"git clone https://github.com/{owner}/{name}.git && cd {name} && git checkout {base_sha} && rm -rf .git && git init && gaa && revelo_commit 'Raw repository' && cd .. && gemini"
 
+            pr_body = pr_details.get("body", "")
+            related_issues_count = 0
+            if pr_body:
+                mentions = re.findall(r"#(\d+)", pr_body)
+                urls = re.findall(r"https://github.com/.+/.+/issues/(\d+)", pr_body)
+                all_issues = set(mentions) | set(urls)
+                valid_issues = {issue for issue in all_issues if len(issue) < 7}
+                related_issues_count = len(valid_issues)
+
             rows.append({
                 "repo": f"{owner}/{name}",
                 "stars": stars,
@@ -418,7 +427,8 @@ def process_repo(repo: Dict, min_files: int, max_files: int, min_lines: int, max
                 "changed_files": changed_files,
                 "base_sha": base_sha,
                 "clone_command": clone_command,
-                "diff_link": f"https://patch-diff.githubusercontent.com/raw/{owner}/{name}/pull/{pr_number}.diff"
+                "diff_link": f"https://patch-diff.githubusercontent.com/raw/{owner}/{name}/pull/{pr_number}.diff",
+                "related_issues_in_pr": related_issues_count
             })
         except Exception as e:
             if verbose:
