@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+docker builder prune --all -f
+docker image prune -a -f

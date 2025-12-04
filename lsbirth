@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Collect directories with their modify time (fallback for systems without birth time)
+data=$(for d in */; do
+    mtime=$(stat -c "%y" "$d") # always exists
+    echo "$mtime|$d"
+done)
+
+# Sort by timestamp DESC and get dir names
+dirs=$(echo "$data" | sort -r | cut -d"|" -f2)
+
+# Print with ls in long-ISO timestamp format
+LS_COLORS=$LS_COLORS ls -ld --time-style=long-iso --color=auto $dirs

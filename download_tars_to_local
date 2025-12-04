@@ -1,0 +1,166 @@
+#!/bin/bash
+
+set -euo pipefail
+
+CODESPACE_NAME="${1:-improved-orbit-qj4v77x95xphxgpp}"
+DOWNLOAD_DIR="${2:-/home/veras/Veras/scripts/revelo/PR-Writer-Reviewer/done}"
+REMOTE_DIR="/workspaces/codespaces-blank"
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+log_info() {
+    echo -e "${GREEN}[INFO]${NC} $1"
+}
+
+log_error() {
+    echo -e "${RED}[ERROR]${NC} $1"
+}
+
+log_warning() {
+    echo -e "${YELLOW}[WARNING]${NC} $1"
+}
+
+log_step() {
+    echo -e "${BLUE}[STEP]${NC} $1"
+}
+
+if [ -n "${CODESPACES_API:-}" ]; then
+    export GITHUB_TOKEN="$CODESPACES_API"
+    log_info "Using credentials from CODESPACES_API"
+fi
+
+if ! command -v gh &> /dev/null; then
+    log_error "GitHub CLI (gh) is not installed!"
+    echo "Install it from: https://cli.github.com/"
+    exit 1
+fi
+
+AUTH_STATUS=$(gh auth status 2>&1)
+if [ $? -ne 0 ]; then
+    log_error "Not authenticated with GitHub CLI"
+    echo "Run: gh auth login"
+    exit 1
+fi
+
+if ! echo "$AUTH_STATUS" | grep -q "codespace"; then
+    log_error "Your authentication token is missing the 'codespace' scope."
+    echo "Please generate a new token with the 'codespace' scope enabled."
+    exit 1
+fi
+
+mkdir -p "$DOWNLOAD_DIR"
+log_info "Download directory: $DOWNLOAD_DIR"
+
+log_step "Getting list of tar files from codespace..."
+TAR_FILES=$(gh codespace ssh -c "$CODESPACE_NAME" -- "find '$REMOTE_DIR' -maxdepth 1 -name '*.tar' -type f")
+
+if [ -z "$TAR_FILES" ]; then
+    log_warning "No tar files found in $REMOTE_DIR"
+    exit 0
+fi
+
+mapfile -t TAR_ARRAY <<< "$TAR_FILES"
+TOTAL=${#TAR_ARRAY[@]}
+log_info "Found $TOTAL tar file(s) to download"
+echo ""
+
+SUCCESS=0
+FAILED=0
+
+for i in "${!TAR_ARRAY[@]}"; do
+    TAR_FILE="${TAR_ARRAY[$i]}"
+    BASENAME=$(basename "$TAR_FILE")
+    CURRENT=$((i + 1))
+
+    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    log_step "[$CURRENT/$TOTAL] Processing: $BASENAME"
+
+    FILE_SIZE=$(gh codespace ssh -c "$CODESPACE_NAME" -- "stat -c%s '$TAR_FILE' 2>/dev/null || echo 0")
+    FILE_SIZE_MB=$(awk "BEGIN {printf \"%.2f\", $FILE_SIZE/1024/1024}")
+    log_info "Remote file size: ${FILE_SIZE_MB} MB"
+
+    log_info "Downloading..."
+    LOCAL_FILE="$DOWNLOAD_DIR/$BASENAME"
+    DOWNLOAD_SUCCESS=false
+
+    log_info "Method 1: Using gzip compression for transfer..."
+    if gh codespace ssh -c "$CODESPACE_NAME" -- "gzip -c '$TAR_FILE'" | gunzip > "$LOCAL_FILE" 2>/dev/null; then
+        if [ -f "$LOCAL_FILE" ] && [ -s "$LOCAL_FILE" ]; then
+            CURRENT_SIZE=$(stat -c%s "$LOCAL_FILE" 2>/dev/null || stat -f%z "$LOCAL_FILE" 2>/dev/null || echo 0)
+            if [ "$CURRENT_SIZE" -gt 1000000 ]; then
+                DOWNLOAD_SUCCESS=true
+                log_info "Transfer completed"
+            fi
+        fi
+    fi
+
+    if [ "$DOWNLOAD_SUCCESS" = false ]; then
+        log_warning "Method 1 failed, trying Method 2: base64 encoding..."
+        rm -f "$LOCAL_FILE"
+        TEMP_B64="$LOCAL_FILE.b64"
+
+        if gh codespace ssh -c "$CODESPACE_NAME" -- "base64 '$TAR_FILE'" > "$TEMP_B64" 2>/dev/null; then
+            if [ -s "$TEMP_B64" ]; then
+                base64 -d "$TEMP_B64" > "$LOCAL_FILE" 2>/dev/null
+                rm -f "$TEMP_B64"
+                if [ -f "$LOCAL_FILE" ] && [ -s "$LOCAL_FILE" ]; then
+                    DOWNLOAD_SUCCESS=true
+                    log_info "Transfer completed"
+                fi
+            fi
+        fi
+        rm -f "$TEMP_B64"
+    fi
+
+    if [ "$DOWNLOAD_SUCCESS" = true ] && [ -f "$LOCAL_FILE" ] && [ -s "$LOCAL_FILE" ]; then
+        LOCAL_SIZE=$(stat -c%s "$LOCAL_FILE" 2>/dev/null || stat -f%z "$LOCAL_FILE" 2>/dev/null || echo 0)
+        LOCAL_SIZE_MB=$(awk "BEGIN {printf \"%.2f\", $LOCAL_SIZE/1024/1024}")
+
+        if [ "$LOCAL_SIZE" -ge "$FILE_SIZE" ]; then
+            log_info "✓ Downloaded successfully"
+            log_info "Local file size: ${LOCAL_SIZE_MB} MB (remote: ${FILE_SIZE_MB} MB)"
+
+            log_info "Checking file type..."
+            FILE_TYPE=$(file -b "$LOCAL_FILE")
+            if [[ "$FILE_TYPE" == *"tar"* ]] || [[ "$FILE_TYPE" == *"archive"* ]]; then
+                log_info "✓ File type confirmed: $FILE_TYPE"
+
+                log_info "Deleting from codespace..."
+                if gh codespace ssh -c "$CODESPACE_NAME" -- "rm '$TAR_FILE'"; then
+                    log_info "✓ Deleted from codespace"
+                    SUCCESS=$((SUCCESS + 1))
+                else
+                    log_error "Failed to delete from codespace"
+                    FAILED=$((FAILED + 1))
+                fi
+            else
+                log_error "Unexpected file type: $FILE_TYPE"
+                log_info "File kept locally for inspection"
+                FAILED=$((FAILED + 1))
+            fi
+        else
+            log_error "Size issue! Local ($LOCAL_SIZE bytes) is smaller than remote ($FILE_SIZE bytes)"
+            log_error "File kept locally for manual verification"
+            FAILED=$((FAILED + 1))
+        fi
+    else
+        log_error "Download failed"
+        rm -f "$LOCAL_FILE"
+        FAILED=$((FAILED + 1))
+    fi
+
+    echo ""
+done
+
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+log_info "SUMMARY"
+echo -e "  ${GREEN}Successfully processed:${NC} $SUCCESS"
+echo -e "  ${RED}Failed:${NC} $FAILED"
+echo -e "  ${BLUE}Downloaded to:${NC} $DOWNLOAD_DIR"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+exit 0
